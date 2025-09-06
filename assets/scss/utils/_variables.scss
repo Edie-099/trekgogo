@@ -302,10 +302,11 @@ $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       #DB5D23; // $yellow !default; custom
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -626,9 +627,9 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
+$line-height-base:            1.2; // 1.5 !default; custom
 $line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
+$line-height-lg:              1.5; // 2 !default; custom
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
@@ -636,6 +637,7 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * 0.875 !default; // custom
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -645,7 +647,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size // custom
 ) !default;
 // scss-docs-end font-sizes
 
@@ -664,13 +667,22 @@ $display-font-sizes: (
   2: 4.5rem,
   3: 4rem,
   4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
+  5: 3.375rem, // custom
+  6: 3rem // custom
 ) !default;
+
+// $display-font-sizes: (
+//   1: 5rem,
+//   2: 4.5rem,
+//   3: 4rem,
+//   4: 3.5rem,
+//   5: 3rem,
+//   6: 2.5rem
+// ) !default;
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: 300 !default;
+$display-font-weight: 700; // 300 !default; custom
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
