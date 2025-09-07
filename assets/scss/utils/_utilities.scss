@@ -588,22 +588,7 @@ $utilities: map-merge(
           "body-secondary": var(--#{$prefix}secondary-color),
           "body-tertiary": var(--#{$prefix}tertiary-color),
           "body-emphasis": var(--#{$prefix}emphasis-color),
-          "reset": inherit,
-          // 以下為 custom
-          "error": #E94051,
-          "primary-300": #325B53,
-          "primary-200": #2B897A,
-          "primary-100": #E2EEE4,
-          "secondary-300": #B08E5F,
-          "secondary-200": #D7C8A3,
-          "secondary-100": #F1EEE8,
-          "neutral-700": #1B2028,
-          "neutral-600": #2A3342,
-          "neutral-500": #445066,
-          "neutral-400": #7C8A9D,
-          "neutral-300": #C7CDD4,
-          "neutral-200": #DCE0E5,
-          "neutral-100": #F3F4F4
+          "reset": inherit
         )
       )
     ),

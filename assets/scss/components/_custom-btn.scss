@@ -1,0 +1,20 @@
+.custom-btn {
+  @include button-variant(
+    #325b53,
+    #325b53,
+    $hover-background: shade-color(#2b897a, $btn-hover-bg-shade-amount),
+    $hover-border: shade-color(#2b897a, $btn-hover-border-shade-amount),
+    $active-background: shade-color(#2b897a, $btn-active-bg-shade-amount),
+    $active-border: shade-color(#2b897a, $btn-active-border-shade-amount)
+  );
+}
+
+.custom-btn-outline {
+  @include button-outline-variant(
+    #325b53,
+    $color-hover: #2b897a,
+    $active-background: #ffffff,
+    $active-border: #2b897a,
+    $active-color: #2b897a
+  );
+}

@@ -1,0 +1,49 @@
+// 使用方法
+// 引入 <i class="bi bi-arrow-left"></i> 後
+// 於 class 加入 custom-carousel-control-prev-icon 套用樣式
+// 快速複製 <i class="bi bi-arrow-left custom-carousel-control-prev-icon"></i>
+.custom-carousel-control-prev-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: $primary-300;
+    vertical-align: bottom;
+    border: 2.5px solid $primary-300;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 24px #2A334233;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #D5E8D980;
+        opacity: 1;
+    }
+}
+
+// 使用方法
+// 引入 <i class="bi bi-arrow-right"></i> 後
+// 於 class 加入 custom-carousel-control-next-icon 套用樣式
+// 快速複製 <i class="bi bi-arrow-right custom-carousel-control-next-icon"></i>
+.custom-carousel-control-next-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: $primary-300;
+    vertical-align: bottom;
+    border: 2.5px solid $primary-300;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 24px #2A334233;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #D5E8D980;
+        opacity: 1;
+    }
+}
