@@ -464,12 +464,13 @@ $spacers: (
   2: $spacer * .5, // 8px
   3: $spacer * 0.75, // 12px
   4: $spacer, // 16px
-  5: $spacer * 1.5, //24px
-  6: $spacer * 2, //32px
-  7: $spacer * 3, // 48px
-  8: $spacer * 3.75, // 60px
-  9: $spacer * 5, // 80px
-  10: $spacer * 7.5, // 120px
+  5: $spacer * 1.2, //20px
+  6: $spacer * 1.5, //24px
+  7: $spacer * 2, //32px
+  8: $spacer * 3, // 48px
+  9: $spacer * 3.75, // 60px
+  10: $spacer * 5, // 80px
+  11: $spacer * 7.5, // 120px
 ) !default;
 
 // $spacers: (
@@ -979,18 +980,18 @@ $input-disabled-border-color:           null !default;
 
 $input-color:                           var(--#{$prefix}body-color) !default;
 $input-border-color:                    var(--#{$prefix}border-color) !default;
-$input-border-width:                    $input-btn-border-width !default;
+$input-border-width:                    2px; // $input-btn-border-width !default; custom
 $input-box-shadow:                      var(--#{$prefix}box-shadow-inset) !default;
 
-$input-border-radius:                   var(--#{$prefix}border-radius) !default;
+$input-border-radius:                   12px; // var(--#{$prefix}border-radius) !default; custom
 $input-border-radius-sm:                var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg:                var(--#{$prefix}border-radius-lg) !default;
 
 $input-focus-bg:                        $input-bg !default;
-$input-focus-border-color:              tint-color($component-active-bg, 50%) !default;
+$input-focus-border-color:              $primary-200; // tint-color($component-active-bg, 50%) !default; custom
 $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
-$input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+$input-focus-box-shadow:                unset; // $input-btn-focus-box-shadow !default; custom
 
 $input-placeholder-color:               var(--#{$prefix}secondary-color) !default;
 $input-plaintext-color:                 var(--#{$prefix}body-color) !default;
@@ -1026,11 +1027,11 @@ $form-check-input-border:                 var(--#{$prefix}border-width) solid va
 $form-check-input-border-radius:          .25em !default;
 $form-check-radio-border-radius:          50% !default;
 $form-check-input-focus-border:           $input-focus-border-color !default;
-$form-check-input-focus-box-shadow:       $focus-ring-box-shadow !default;
+$form-check-input-focus-box-shadow:       unset; // $focus-ring-box-shadow !default; custom
 
-$form-check-input-checked-color:          $component-active-color !default;
-$form-check-input-checked-bg-color:       $component-active-bg !default;
-$form-check-input-checked-border-color:   $form-check-input-checked-bg-color !default;
+$form-check-input-checked-color:          $primary-300; // $component-active-color !default; custom
+$form-check-input-checked-bg-color:       unset; // $component-active-bg !default; custom
+$form-check-input-checked-border-color:   $primary-300; // $form-check-input-checked-bg-color !default; custom
 $form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
@@ -1163,7 +1164,7 @@ $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $form-text-font-size !default;
 $form-feedback-font-style:          $form-text-font-style !default;
 $form-feedback-valid-color:         $success !default;
-$form-feedback-invalid-color:       $danger !default;
+$form-feedback-invalid-color:       $error; // $danger !default; custom
 
 $form-feedback-icon-valid-color:    $form-feedback-valid-color !default;
 $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;
@@ -1185,7 +1186,7 @@ $form-validation-states: (
     "icon": $form-feedback-icon-valid,
     "tooltip-color": #fff,
     "tooltip-bg-color": var(--#{$prefix}success),
-    "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}success-rgb), $input-btn-focus-color-opacity),
+    // "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}success-rgb), $input-btn-focus-color-opacity), custom
     "border-color": var(--#{$prefix}form-valid-border-color),
   ),
   "invalid": (
@@ -1193,7 +1194,7 @@ $form-validation-states: (
     "icon": $form-feedback-icon-invalid,
     "tooltip-color": #fff,
     "tooltip-bg-color": var(--#{$prefix}danger),
-    "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}danger-rgb), $input-btn-focus-color-opacity),
+    // "focus-box-shadow": 0 0 $input-btn-focus-blur $input-focus-width rgba(var(--#{$prefix}danger-rgb), $input-btn-focus-color-opacity), custom
     "border-color": var(--#{$prefix}form-invalid-border-color),
   )
 ) !default;
@@ -1315,11 +1316,11 @@ $dropdown-padding-x:                0 !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-font-size:                $font-size-base !default;
-$dropdown-color:                    var(--#{$prefix}body-color) !default;
+$dropdown-color:                    $neutral-500; // var(--#{$prefix}body-color) !default; custom
 $dropdown-bg:                       var(--#{$prefix}body-bg) !default;
-$dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
-$dropdown-border-radius:            var(--#{$prefix}border-radius) !default;
-$dropdown-border-width:             var(--#{$prefix}border-width) !default;
+$dropdown-border-color:             $neutral-300; // var(--#{$prefix}border-color-translucent) !default; custom
+$dropdown-border-radius:            12px; // var(--#{$prefix}border-radius) !default; custom
+$dropdown-border-width:             2px; // var(--#{$prefix}border-width) !default; custom
 $dropdown-inner-border-radius:      calc(#{$dropdown-border-radius} - #{$dropdown-border-width}) !default; // stylelint-disable-line function-disallowed-list
 $dropdown-divider-bg:               $dropdown-border-color !default;
 $dropdown-divider-margin-y:         $spacer * .5 !default;
@@ -1421,7 +1422,7 @@ $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
 $card-border-width:                 var(--#{$prefix}border-width) !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius:                var(--#{$prefix}border-radius) !default;
+$card-border-radius:                16px !default; // var(--#{$prefix}border-radius) custom
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;

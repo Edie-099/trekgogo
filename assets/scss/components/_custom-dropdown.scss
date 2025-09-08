@@ -1,0 +1,17 @@
+.custom-dropdown {
+    padding: 16px;
+    border: 2px solid $neutral-300;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:active {
+        border: 2px solid $primary-200;
+    }
+}
+
+// 根據 dropdown 的寬度調整
+// 若寬度不符合需求
+// 可自行新增 class
+.custom-dropdown-w465 {
+    width: 465.41px;
+}
