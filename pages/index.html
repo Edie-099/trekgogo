@@ -11,11 +11,56 @@
 <body>
   <%- include('./layout/header'); -%>
 
+    <div class="container">
 
+      <!-- go-top -->
+      <a href="#top" class="custom-go-top p-1">
+        <span class="material-symbols-rounded">
+          keyboard_arrow_up
+        </span>
+        TOP
+      </a>
+
+    </div>
 
     <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
+      <script type="module" src="../main.js">
+
+        // go-top-start
+        var ready = (callback) => {
+          if (document.readyState != "loading") callback();
+          else document.addEventListener("DOMContentLoaded", callback);
+        };
+
+        ready((event) => {
+          const scrollTo = (element, to, duration) => {
+            if (duration <= 0) {
+              return;
+            }
+            var difference = to - element.scrollTop;
+            var perTick = (difference / duration) * 10;
+
+            setTimeout(() => {
+              element.scrollTop = element.scrollTop + perTick;
+              if (element.scrollTop === to) {
+                return;
+              }
+              scrollTo(element, to, duration - 10);
+            }, 10);
+          };
+
+          var gotop = document.querySelector(".gotop");
+          var html = document.documentElement;
+
+          gotop.addEventListener("click", (e) => {
+            e.preventDefault();
+            scrollTo(html, 0, 800);
+          });
+        });
+        // go-top-end
+
+      </script>
 </body>
 
 </html>
