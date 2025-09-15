@@ -569,8 +569,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1920px // 1320px custom
+  xl: 1296px, // 1140px, custom
+  xxl: 1320px
 ) !default;
 // scss-docs-end container-max-widths
 
