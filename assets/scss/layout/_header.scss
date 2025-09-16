@@ -4,4 +4,28 @@
     color: $neutral-600;
     padding-top: 11px;
     padding-bottom: 11px;
+    position: relative;
+
+    &:hover {
+        color: $primary-300;
+    }
+
+    &:hover::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: 4px;
+        background: $primary-300;
+    }
+}
+
+.header-btn-size {
+    width: 96px;
+    height: 54px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
