@@ -9,7 +9,7 @@
     &:hover {
         color: $primary-300;
     }
-
+    
     &:hover::after {
         content: "";
         position: absolute;
