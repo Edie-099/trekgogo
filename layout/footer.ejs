@@ -1,13 +1,16 @@
 <div class="container-xl">
-    <div class="d-flex justify-content-between">
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
         <!-- 左側 -->
         <div>
             <!-- logo -->
-            <h2 class="mb-8">
-                <a href="#"><img src="../assets/images/BrandLogo.png" alt="logo"></a>
+            <h2 class="mb-7 mb-lg-8">
+                <a href="#">
+                    <img src="../assets/images/BrandLogo.png" class="d-lg-block d-none" alt="logo">
+                    <img src="../assets/images/BrandLogo_sm.png" class="d-md-block d-lg-none" alt="logo">
+                </a>
             </h2>
             <!-- social-icon -->
-            <ul class="list-unstyled d-flex mb-4">
+            <ul class="list-unstyled d-flex mb-3 mb-lg-4">
                 <li class="me-4">
                     <a class="footer-social-icon-item" href="#"><i class="bi bi-facebook"></i></a>
                 </li>
@@ -19,55 +22,138 @@
                 </li>
             </ul>
             <!-- contact-info -->
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mb-7">
                 <li class="mb-2">
-                    <a class="footer-contact-link" href="tel:+886-2-12345678">02-1234-5678</a>
+                    <a class="footer-contact-link fs-lg-6" href="tel:+886-2-12345678">02-1234-5678</a>
                 </li>
                 <li class="mb-2">
-                    <p class="text-neutral-700">98342 白嶺市霧松區靜山路 89 巷 17 弄 3 號</p>
+                    <p class="text-neutral-700 fs-lg-6">98342 白嶺市霧松區靜山路 89 巷 17 弄 3 號</p>
                 </li>
                 <li>
-                    <a class="footer-contact-link" href="mailto:mountain@email.com">mountain@email.com</a>
+                    <a class="footer-contact-link fs-lg-6" href="mailto:mountain@email.com">mountain@email.com</a>
                 </li>
             </ul>
         </div>
         <!-- 右側 -->
-        <div class="d-flex">
+        <!-- 桌面版 list 結構 -->
+        <div class="d-flex d-none d-lg-block d-lg-flex">
             <div class="list-group list-group-flush me-7">
-                <a href="#" class="footer-list-group-title mb-6 px-3" aria-current="true">
+                <a href="#" class="footer-list-group-title fs-lg-5 fs-lg-5 mb-6 px-3" aria-current="true">
                     探索申請區
                 </a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">登山路線探索</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">我要申請</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">登山路線探索</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">我要申請</a>
             </div>
             <div class="list-group list-group-flush me-7">
-                <a href="#" class="footer-list-group-title mb-6 px-3" aria-current="true">
+                <a href="#" class="footer-list-group-title fs-lg-5 mb-6 px-3" aria-current="true">
                     行程準備區
                 </a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">登山保險指南</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">裝備檢查清單</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">登山工具清單</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">登山保險指南</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">裝備檢查清單</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">登山工具清單</a>
             </div>
             <div class="list-group list-group-flush me-7">
-                <a href="#" class="footer-list-group-title mb-6 px-3" aria-current="true">
+                <a href="#" class="footer-list-group-title fs-lg-5 mb-6 px-3" aria-current="true">
                     學習互動區
                 </a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">登山學堂</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">行前模擬任務</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">問答與社群</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">登山學堂</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">行前模擬任務</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">問答與社群</a>
             </div>
             <div class="list-group list-group-flush">
-                <a href="#" class="footer-list-group-title mb-6 px-3" aria-current="true">
+                <a href="#" class="footer-list-group-title fs-lg-5 mb-6 px-3" aria-current="true">
                     會員申請區
                 </a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">登山日誌</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">行程計劃管理</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">申請與保險紀錄</a>
-                <a href="#" class="footer-list-group-item mb-3 px-3 py-1">提醒設定</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">登山日誌</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">行程計劃管理</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">申請與保險紀錄</a>
+                <a href="#" class="footer-list-group-item fs-lg-6 mb-3 px-3 py-1">提醒設定</a>
             </div>
         </div>
-    </div>
 
-    <!-- 9/17 伊迪：假日處理 RWD -->
+        <!-- 行動版 list 結構 -->
+        <div class="accordion accordion-flush d-lg-none d-block mb-7" id="accordionFlushExample">
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="applicationSection-heading">
+                    <button class="accordion-button collapsed px-0 py-3 mb-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#applicationSection-collapse" aria-expanded="false"
+                        aria-controls="applicationSection-collapse">
+                        <span class="h5 header-accordion-link">探索申請區</span>
+                    </button>
+                </h2>
+                <div id="applicationSection-collapse" class="accordion-collapse collapse"
+                    aria-labelledby="applicationSection-heading" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0 mb-3">
+                        <ul class="list-unstyled px-3">
+                            <li><a class="header-accordion-link mb-6" href="#">登山路線探索</a></li>
+                            <li><a class="header-accordion-link" href="#">我要申請</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="preparationSection-heading">
+                    <button class="accordion-button collapsed px-0 pb-3 mb-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#preparationSection-collapse" aria-expanded="false"
+                        aria-controls="preparationSection-collapse">
+                        <span class="h5 header-accordion-link">行前準備區</span>
+                    </button>
+                </h2>
+                <div id="preparationSection-collapse" class="accordion-collapse collapse"
+                    aria-labelledby="preparationSection-heading" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0 mb-3">
+                        <ul class="list-unstyled">
+                            <li><a class="header-accordion-link mb-6" href="#">登山保險指南</a></li>
+                            <li><a class="header-accordion-link mb-6" href="#">裝備檢查清單</a></li>
+                            <li><a class="header-accordion-link" href="#">登山工具清單</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="learningSection-heading">
+                    <button class="accordion-button collapsed px-0 py-3 mb-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#learningSection-collapse" aria-expanded="false"
+                        aria-controls="learningSection-collapse">
+                        <span class="h5 header-accordion-link">學習互動區</span>
+                    </button>
+                </h2>
+                <div id="learningSection-collapse" class="accordion-collapse collapse"
+                    aria-labelledby="learningSection-heading" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0 mb-3">
+                        <ul class="list-unstyled">
+                            <li><a class="header-accordion-link mb-6" href="#">登山學堂</a></li>
+                            <li><a class="header-accordion-link mb-6" href="#">行前模擬任務</a></li>
+                            <li><a class="header-accordion-link" href="#">問答與社群</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="memberSection-heading">
+                    <button class="accordion-button collapsed px-0 py-3 mb-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#memberSection-collapse" aria-expanded="false"
+                        aria-controls="memberSection-collapse">
+                        <span class="h5 header-accordion-link">會員申請區</span>
+                    </button>
+                </h2>
+                <div id="memberSection-collapse" class="accordion-collapse collapse"
+                    aria-labelledby="memberSection-heading" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0">
+                        <ul class="list-unstyled">
+                            <li><a class="header-accordion-link mb-6" href="#">登山日誌</a></li>
+                            <li><a class="header-accordion-link mb-6" href="#">行程計劃管理</a></li>
+                            <li><a class="header-accordion-link mb-6" href="#">申請與保險紀錄</a></li>
+                            <li><a class="header-accordion-link" href="#">提醒設定</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </div>
