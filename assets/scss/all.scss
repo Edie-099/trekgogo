@@ -4,7 +4,24 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "./utils/variables";
 @import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
 @import "./utils/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
 @import "../../node_modules/bootstrap";
 
 @import "./base/base";
