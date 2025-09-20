@@ -11,15 +11,14 @@
     <%- include('./layout/header'); -%>
 
         <div class="login-bg">
-            
             <div class="container-xl pt-11">
                 <div class="row justify-content-center">
                     <div class="col-6 login-w-662">
 
                         <!-- 會員登入 -->
                         <div class="card mb-6">
-                            <div class="card-body p-7">
-                                <h5 class="card-title h1 text-center text-neutral-700 fw-bold mb-7">會員登入</h5>
+                            <div class="card-body p-4 p-lg-7">
+                                <h5 class="card-title fs-3 fs-lg-1 text-center text-neutral-700 fw-bold mb-7">會員登入</h5>
                                 <div class="mb-7">
                                     <label for="userAccountInput" class="form-label h5 text-neutral-700 mb-3">帳號</label>
                                     <input type="email" class="form-control login-form-control" id="userAccountInput"
@@ -46,11 +45,11 @@
 
                                     <!-- 第三方登入鍵 -->
                                     <div class="d-flex flex-column">
-                                        <a href="#" class="btn custom-btn-outline login-socialBtn mb-4">
+                                        <a href="#" class="btn custom-btn-outline login-socialBtn-google mb-4">
                                             <img src="../assets/images/icons-google.png" alt="google-login">
                                             以 Google 登入
                                         </a>
-                                        <a href="#" class="btn custom-btn-outline login-socialBtn">
+                                        <a href="#" class="btn custom-btn-outline login-socialBtn-line">
                                             <img src="../assets/images/icons-line.png" alt="line-login">
                                             以 LINE 登入
                                         </a>
@@ -61,14 +60,14 @@
                         </div>
 
                         <!-- 加入會員 -->
-                        <div class="mb-8">
+                        <div class="mb-7 mb-lg-8">
                             <p class="text-neutral-700 text-center">還沒有會員帳號嗎?
                                 <a href="#"><span class="login-form-link fw-bolder ms-2">加入會員</span></a>
                             </p>
                         </div>
 
                         <!-- 會員相關問題 -->
-                        <div class="mb-10">
+                        <div class="mb-8 mb-lg-10">
                             <p class="h5 text-neutral-700 mb-4">會員相關問題</p>
                             <ol class="text-neutral-600">
                                 <li class="mb-4">
@@ -82,14 +81,9 @@
                                 </li>
                             </ol>
                         </div>
-
                     </div>
                 </div>
             </div>
-
-
-
-        <%- include('./layout/go-top'); -%>
 
             <script type="module" src="../main.js">
 
