@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索申請區</title>
+    <link rel="stylesheet" href="../static/css/search.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="se-mapbox">
+  <div class="mt-10 mb-10"><img src="/assets/images/search/map-zone.png" alt="#"></div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-10">
+                <h1 class="mb-5">熱門登山路線狀態</h1>
+                <div class="d-flex  ">
+                <img src="/assets/images/search/top1-road.png" alt="#">
+                <div class="d-flex justify-content-between flex-grow-1 ps-3">
+                    <div class="me-2">名稱</div>
+                    <div class="me-2">地區</div>
+                    <div class="me-2">登山路線狀態</div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+
+
+  <%- include('./layout/footer'); -%>
+  <%- include('./layout/go-top'); -%>
+
+
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // 初始化地圖
+    const map = L.map('map').setView([23.6978, 120.9605], 7); // 台灣中心點
+
+    // 加入 OpenStreetMap 圖資
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // 放一個 marker（台北）
+    L.marker([25.0330, 121.5654])
+      .addTo(map)
+      .bindPopup("台北 101")
+      .openPopup();
+  </script>
+        <script type="module" src="../main.js">
+
+          // go-top-start
+          var ready = (callback) => {
+            if (document.readyState != "loading") callback();
+            else document.addEventListener("DOMContentLoaded", callback);
+          };
+
+          ready((event) => {
+            const scrollTo = (element, to, duration) => {
+              if (duration <= 0) {
+                return;
+              }
+              var difference = to - element.scrollTop;
+              var perTick = (difference / duration) * 10;
+
+              setTimeout(() => {
+                element.scrollTop = element.scrollTop + perTick;
+                if (element.scrollTop === to) {
+                  return;
+                }
+                scrollTo(element, to, duration - 10);
+              }, 10);
+            };
+
+            var gotop = document.querySelector(".gotop");
+            var html = document.documentElement;
+
+            gotop.addEventListener("click", (e) => {
+              e.preventDefault();
+              scrollTo(html, 0, 800);
+            });
+          });
+          // go-top-end
+
+        </script>
+</body>
+
+</html>
