@@ -1,0 +1,38 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css);
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded);
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "./utils/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "../../node_modules/bootstrap";
+
+@import "./base/base";
+@import "./components/custom-btn";
+@import "./components/custom-carousel-control-icon";
+@import "./components/custom-dropdown";
+@import "./components/custom-card-box-shadow";
+@import "./components/custom-go-top";
+@import "./utils/custom-spacing";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/index";

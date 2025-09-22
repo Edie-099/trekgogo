@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trekgogo</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+  <%- include('./layout/footer'); -%>
+  <%- include('./layout/go-top'); -%>
+
+        <script type="module" src="../main.js">
+
+          // go-top-start
+          var ready = (callback) => {
+            if (document.readyState != "loading") callback();
+            else document.addEventListener("DOMContentLoaded", callback);
+          };
+
+          ready((event) => {
+            const scrollTo = (element, to, duration) => {
+              if (duration <= 0) {
+                return;
+              }
+              var difference = to - element.scrollTop;
+              var perTick = (difference / duration) * 10;
+
+              setTimeout(() => {
+                element.scrollTop = element.scrollTop + perTick;
+                if (element.scrollTop === to) {
+                  return;
+                }
+                scrollTo(element, to, duration - 10);
+              }, 10);
+            };
+
+            var gotop = document.querySelector(".gotop");
+            var html = document.documentElement;
+
+            gotop.addEventListener("click", (e) => {
+              e.preventDefault();
+              scrollTo(html, 0, 800);
+            });
+          });
+          // go-top-end
+
+        </script>
+</body>
+
+</html>

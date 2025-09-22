@@ -1,0 +1,7 @@
+# 自動處理所有文字檔
+* text=auto
+
+# 明確指定 SCSS 與 HTML 使用 LF
+*.scss text eol=lf
+*.css text eol=lf
+*.html text eol=lf
