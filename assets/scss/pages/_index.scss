@@ -418,7 +418,7 @@ i.icon-map {
     right: 8px;
     width: 80px;
     height: 80px;
-    background: #fff url(../images/Arrow-r.svg) no-repeat center center;
+    // background: #fff url(../images/Arrow-r.svg) no-repeat center center;
     background-size: 25%;
     display: flex;
 
@@ -567,9 +567,8 @@ i.icon-map {
     }
 
     .text-box {
-        font-size: 24px;
+        font-size: 16px;
         justify-content: flex-start;
-        font-size: 24px;
         line-height: 150%;
         top: 150px;
         left: 16px;
