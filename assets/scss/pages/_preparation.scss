@@ -236,3 +236,107 @@
     }
   }
 }
+
+// 裝備指南
+:root {
+  --equip-header-h: 274px;
+}
+
+.equip {
+  &__carousel {
+    position: relative;
+    padding-inline: 48px;
+  }
+  &__track {
+    overflow: visible;
+  }
+}
+
+/* 卡片基底：和保險指南一致 */
+.equip-card {
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba($black, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: var(--equip-header-h);
+    background: $neutral-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    border: 1px solid $neutral-300;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $neutral-600;
+  }
+
+  &__img {
+    max-height: calc(var(--equip-header-h) - 48px);
+    max-width: 90%;
+    object-fit: contain;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 700;
+    color: $neutral-700;
+  }
+  &__tags {
+    color: $primary-300;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Tabs 底線版 */
+.equip__tabs--underline {
+  .nav-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 6px 0;
+    color: $neutral-600;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 3px;
+      background: $primary-200;
+      border-radius: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    &:hover {
+      color: $primary-200;
+    }
+    &.active {
+      color: $primary-200;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+/* 左右箭頭沿用保險指南的樣式 */

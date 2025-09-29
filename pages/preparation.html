@@ -163,6 +163,137 @@
           </div>
         </div>
       </section>
+
+      <!-- 裝備指南 -->
+      <section class="equip py-8 py-lg-10">
+        <div class="container">
+          <h2 class="equip__title text-center mb-4 mb-lg-5">裝備指南</h2>
+
+          <!-- Tabs -->
+          <ul
+            class="equip__tabs equip__tabs--underline nav justify-content-center gap-4 mb-5"
+          >
+            <li class="nav-item">
+              <button class="nav-link active">全部</button>
+            </li>
+            <li class="nav-item"><button class="nav-link">穿戴裝備</button></li>
+            <li class="nav-item"><button class="nav-link">背負裝備</button></li>
+            <li class="nav-item"><button class="nav-link">炊事裝備</button></li>
+            <li class="nav-item"><button class="nav-link">過夜裝備</button></li>
+          </ul>
+
+          <!-- 卡片群 + 覆蓋箭頭 -->
+          <div class="equip__carousel">
+            <button
+              class="custom-carousel-control-prev-icon"
+              aria-label="上一張"
+            ></button>
+
+            <div class="row row-cols-1 row-cols-lg-3 g-4 equip__track">
+              <!-- Card 1 -->
+              <div class="col d-flex">
+                <article class="card equip-card w-100 h-100 d-flex flex-column">
+                  <div class="equip-card__header">
+                    <span class="equip-card__badge">穿戴裝備</span>
+                    <img
+                      class="equip-card__img"
+                      src="/assets/images/prepare_Image (1).png"
+                      alt="排汗衣"
+                    />
+                  </div>
+
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="equip-card__title mb-2">排汗衣</h4>
+                    <p class="equip-card__tags">
+                      #聚酯纖維 #不易起毛球 #合身但不緊身
+                    </p>
+                    <p class="mb-2">
+                      登山穿搭的第一層，幫助排汗與保持乾爽，避免失溫風險。建議選擇輕薄涼快款式，有抗
+                      UV 功能更佳。
+                    </p>
+                    <p class="mb-1">
+                      <strong>適用情境：</strong>所有季節、一日或多日行程
+                    </p>
+                    <p class="mb-3">
+                      <strong>貼心提醒：</strong>避免穿棉
+                      T，吸汗卻不易乾會愈走愈冷
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col d-flex">
+                <article class="card equip-card w-100 h-100 d-flex flex-column">
+                  <div class="equip-card__header">
+                    <span class="equip-card__badge">穿戴裝備</span>
+                    <img
+                      class="equip-card__img"
+                      src="/assets/images/prepare_Image (2).png"
+                      alt="登山鞋"
+                    />
+                  </div>
+
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="equip-card__title mb-2">登山鞋</h4>
+                    <p class="equip-card__tags">
+                      #鞋底抓地力 #防水透氣 #合腳度
+                    </p>
+                    <p class="mb-2">
+                      登山時保護雙腳的第一道防線，提供支撐、避震與防滑功能，減少扭傷與疲勞。依路況分為中低筒與高筒。
+                    </p>
+                    <p class="mb-1">
+                      <strong>適用情境：</strong
+                      >多日縱走、高低落差大路線、碎石泥濘地
+                    </p>
+                    <p class="mb-3">
+                      <strong>貼心提醒：</strong
+                      >新鞋先短試走磨合，避免長途磨腳起水泡
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col d-flex">
+                <article class="card equip-card w-100 h-100 d-flex flex-column">
+                  <div class="equip-card__header">
+                    <span class="equip-card__badge">背負裝備</span>
+                    <img
+                      class="equip-card__img"
+                      src="/assets/images/prepare_Image (3).png"
+                      alt="登山背包"
+                    />
+                  </div>
+
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="equip-card__title mb-2">登山背包</h4>
+                    <p class="equip-card__tags">
+                      #背負系統舒適度 #腰帶支撐性 #耐用防潑水布料
+                    </p>
+                    <p class="mb-2">
+                      負重與收納的核心裝備，支撐肩膀與腰部重量分配，讓長時間行走更省力。依行程長短選擇合適容量。
+                    </p>
+                    <p class="mb-1">
+                      <strong>適用情境：</strong
+                      >需長時間行走或需攜帶多項裝備的行程
+                    </p>
+                    <p class="mb-3">
+                      <strong>貼心提醒：</strong
+                      >先測試負重，登山物資放上或靠背會影響舒適度
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button
+              class="custom-carousel-control-next-icon"
+              aria-label="下一張"
+            ></button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <%- include('./layout/footer'); -%> <%- include('./layout/go-top'); -%>
