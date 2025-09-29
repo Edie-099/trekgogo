@@ -294,6 +294,140 @@
           </div>
         </div>
       </section>
+
+      <!-- 工具指南 -->
+      <!-- 工具指南 -->
+      <section class="tools py-8 py-lg-10">
+        <div class="container">
+          <h2 class="tools__title text-center mb-4 mb-lg-5">工具指南</h2>
+
+          <!-- 分類 Tabs（可接 JS 切換） -->
+          <ul
+            class="tools__tabs tools__tabs--underline nav justify-content-center gap-4 mb-5"
+          >
+            <li class="nav-item">
+              <button class="nav-link active">全部</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link">行進輔助工具</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link">攀登技術工具</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link">緊急應變工具</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link">導航通訊工具</button>
+            </li>
+          </ul>
+
+          <!-- 卡片群＋覆蓋箭頭 -->
+          <div class="tools__carousel">
+            <button
+              class="custom-carousel-control-prev-icon"
+              aria-label="上一張"
+            ></button>
+
+            <div class="row row-cols-1 row-cols-lg-3 g-4 tools__track">
+              <!-- Card 1 -->
+              <div class="col d-flex">
+                <article class="card tool-card w-100 h-100 d-flex flex-column">
+                  <div class="tool-card__header">
+                    <span class="tool-card__badge">行進輔助工具</span>
+                    <img
+                      class="tool-card__img"
+                      src="/assets/images/prepare_Image (4).png"
+                      alt="冰斧"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="tool-card__title mb-2">冰斧</h4>
+                    <p class="tool-card__tags">#材質剛度 #反光效果 #收納體積</p>
+                    <p class="mb-2">
+                      登山的第二生命線，幫助在雪坡或冰地自我制動、避免滑落山谷。建議選擇握感穩固、夠輕且強度足夠。
+                    </p>
+                    <p class="mb-1">
+                      <strong>適用情境：</strong>雪季登山、冰雪坡面、冰川路線
+                    </p>
+                    <p class="mb-0">
+                      <strong>貼心提醒：</strong
+                      >出發前練習止滑自救技巧，確認熟練度
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col d-flex">
+                <article class="card tool-card w-100 h-100 d-flex flex-column">
+                  <div class="tool-card__header">
+                    <span class="tool-card__badge">攀登技術工具</span>
+                    <img
+                      class="tool-card__img"
+                      src="/assets/images/prepare_Image (5).png"
+                      alt="攀登繩"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="tool-card__title mb-2">攀登繩</h4>
+                    <p class="tool-card__tags">
+                      #拉力測試 #動靜繩功能 #直徑與重量 #耐磨材質
+                    </p>
+                    <p class="mb-2">
+                      登山隊伍或技術安全確保的重要裝備，連接隊員與保護點，防止墜落。
+                    </p>
+                    <p class="mb-1">
+                      <strong>適用情境：</strong>技術攀登、冰雪地形、橫渡溝越嶺
+                    </p>
+                    <p class="mb-0">
+                      <strong>貼心提醒：</strong
+                      >先檢查繩身損傷，避免在尖銳岩石磨損
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col d-flex">
+                <article class="card tool-card w-100 h-100 d-flex flex-column">
+                  <div class="tool-card__header">
+                    <span class="tool-card__badge">緊急應變工具</span>
+                    <img
+                      class="tool-card__img"
+                      src="/assets/images/prepare_Image (6).png"
+                      alt="求生毯"
+                    />
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h4 class="tool-card__title mb-2">求生毯</h4>
+                    <p class="tool-card__tags">#材質厚度 #反光效果 #收納體積</p>
+                    <p class="mb-2">
+                      緊急保暖裝備，反射熱量、減少熱量流失，是緊急避難的重要工具。
+                    </p>
+                    <p class="mb-1">
+                      <strong>適用情境：</strong
+                      >突變低溫、受傷待援、行程延誤過夜
+                    </p>
+                    <p class="mb-0">
+                      <strong>貼心提醒：</strong
+                      >使用後易損耗須替換，強風處避免破損使用
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button
+              class="custom-carousel-control-next-icon"
+              aria-label="下一張"
+            ></button>
+          </div>
+        </div>
+
+        <!-- 區塊與 footer 之間的分隔背景 -->
+        <div class="section-divider section-divider--mountain"></div>
+      </section>
     </main>
 
     <%- include('./layout/footer'); -%> <%- include('./layout/go-top'); -%>

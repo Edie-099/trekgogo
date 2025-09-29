@@ -339,4 +339,146 @@
   }
 }
 
-/* 左右箭頭沿用保險指南的樣式 */
+// 工具指南
+/* ===== 工具指南（等高卡片＋背景圖＋底部分隔） ===== */
+
+/* 可調整：卡片上方灰底高度、背景不透明度 */
+:root {
+  --tool-header-h: 274px; /* 卡片灰色區塊高度 */
+  --tools-bg-opacity: 0.12; /* 區塊大背景淡度 */
+}
+
+.tools {
+  position: relative;
+  isolation: isolate; /* 讓 ::before 疊在區塊底層 */
+  background: url("/assets/images/BG.png") center/cover no-repeat;
+
+  /* 區塊背景圖（整段雪山氛圍） */
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     inset: 0;
+  //     background: url("/assets/images/BG.png") center/cover no-repeat;
+  //     opacity: var(--tools-bg-opacity);
+  //     pointer-events: none;
+  //     z-index: -1;
+  //   }
+
+  &__carousel {
+    position: relative;
+    padding-inline: 48px;
+  }
+  &__track {
+    overflow: visible;
+  }
+}
+
+/* 底部分隔（到 footer 前） */
+.section-divider {
+  &--mountain {
+    height: 160px; /* 依設計調整高度 */
+    background: url("/assets/images/prepare_FooterDecoration.png") center/cover
+      no-repeat;
+    margin-top: 48px;
+  }
+}
+
+/* Tabs：沿用底線風格 */
+.tools__tabs--underline {
+  .nav-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 6px 0;
+    color: $neutral-600;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 3px;
+      background: $primary-200;
+      border-radius: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    &:hover {
+      color: $primary-200;
+    }
+    &.active {
+      color: $primary-200;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+/* 卡片（與前面 equip-card/ prep-card 規格一致） */
+.tool-card {
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba($black, 0.06);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: var(--tool-header-h);
+    background: $neutral-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    border: 1px solid $neutral-300;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $neutral-600;
+    white-space: nowrap;
+  }
+
+  &__img {
+    max-height: calc(var(--tool-header-h) - 48px);
+    max-width: 90%;
+    object-fit: contain;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 700;
+    color: $neutral-700;
+  }
+  &__tags {
+    color: $primary-300;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 手機窄版：隱藏覆蓋箭頭、縮小左右留白 */
+@media (max-width: 991.98px) {
+  .tools__carousel {
+    padding-inline: 0;
+  }
+  .custom-carousel-control-prev-icon,
+  .custom-carousel-control-next-icon {
+    display: none;
+  }
+}
