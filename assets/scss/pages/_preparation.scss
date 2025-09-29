@@ -7,13 +7,13 @@
   display: grid;
   place-items: center;
   padding-block: clamp(24px, 5vw, 64px);
+  background-color: $white;
 
   &__bg {
     position: absolute;
     inset: 0;
-    /* 換成你的圖路徑 */
-    background: url("/assets/images/prepare_PrepareHeroImage.png") center/cover
-      no-repeat;
+    background: url("/assets/images/prepare_PrepareHeroImage.png") center top/
+      cover no-repeat;
     filter: brightness(0.92);
   }
 
