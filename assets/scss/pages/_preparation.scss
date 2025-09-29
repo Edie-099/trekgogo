@@ -1,0 +1,50 @@
+/* === Hero === */
+
+/* 行前安全準備區塊 */
+.hero {
+  position: relative;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  padding-block: clamp(24px, 5vw, 64px);
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    /* 換成你的圖路徑 */
+    background: url("/assets/images/prepare_PrepareHeroImage.png") center/cover
+      no-repeat;
+    filter: brightness(0.92);
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    width: min(980px, 94%);
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: 16px; // 也可用 $border-radius-xl
+    box-shadow: 0 10px 30px rgba($black, 0.12); // 也可改成 $box-shadow-lg
+    padding: clamp(16px, 3.2vw, 32px);
+  }
+
+  &__title {
+    font-weight: 800;
+    color: $neutral-700; // 客製中性的色
+    // 若想更深：color: $body-color; // = $gray-900
+  }
+
+  //   &__form {
+  //     /* 需要額外間距就放這裡 */
+  //   }
+}
+
+/* 調整原生 select 的箭頭顏色（沿用form-select 變數設定） */
+.form-select {
+  background-position: right $form-select-padding-x center;
+  background-size: 16px 12px;
+  &:focus {
+    border-color: $input-focus-border-color; //  $primary-200
+    box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity);
+  }
+}

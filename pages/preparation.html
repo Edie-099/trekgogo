@@ -1,32 +1,85 @@
-<section class="hero">
-  <div class="hero__bg" aria-hidden="true"></div>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trekgogo</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
 
-  <div class="hero__card">
-    <h2 class="hero__title">行前安全準備</h2>
+    <main>
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
 
-    <form class="hero__form" action="javascript:;">
-      <div class="hero__grid">
-        <label class="form-field">
-          <span class="form-field__label">路線</span>
-          <select class="form-field__select">
-            <option selected disabled>請選擇路線</option>
-            <option>郊山入門</option>
-            <option>百岳初階</option>
-          </select>
-        </label>
+        <div class="hero__card">
+          <h2 class="hero__title text-center mb-6">行前安全準備</h2>
 
-        <label class="form-field">
-          <span class="form-field__label">預計天數</span>
-          <select class="form-field__select">
-            <option selected disabled>請選擇天數</option>
-            <option>1 天</option>
-            <option>2 天</option>
-            <option>3 天</option>
-          </select>
-        </label>
-      </div>
+          <form class="hero__form" action="javascript:;">
+            <div class="row g-4 mb-6">
+              <div class="col-12 col-md-6">
+                <label class="form-label">路線</label>
+                <select class="form-select">
+                  <option selected disabled>請選擇路線</option>
+                  <option>郊山入門</option>
+                  <option>百岳初階</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label">預計天數</label>
+                <select class="form-select">
+                  <option selected disabled>請選擇天數</option>
+                  <option>1 天</option>
+                  <option>2 天</option>
+                  <option>3 天</option>
+                </select>
+              </div>
+            </div>
 
-      <button class="btn btn--primary hero__cta">建立你的登山指南</button>
-    </form>
-  </div>
-</section>
+            <div class="text-center">
+              <button class="btn btn-primary px-5">建立你的登山指南</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%> <%- include('./layout/go-top'); -%>
+
+    <!-- 匯入 Vite 入口 -->
+
+    <script type="module" src="/main.js"></script>
+
+    <!-- 內嵌的 go-top 腳本分開放 -->
+    <script>
+      // go-top-start
+      (function () {
+        var ready = (cb) =>
+          document.readyState !== "loading"
+            ? cb()
+            : document.addEventListener("DOMContentLoaded", cb);
+        ready(() => {
+          const scrollTo = (el, to, duration) => {
+            if (duration <= 0) return;
+            const diff = to - el.scrollTop;
+            const perTick = (diff / duration) * 10;
+            setTimeout(() => {
+              el.scrollTop = el.scrollTop + perTick;
+              if (el.scrollTop === to) return;
+              scrollTo(el, to, duration - 10);
+            }, 10);
+          };
+          var gotop = document.querySelector(".gotop");
+          var html = document.documentElement;
+          if (gotop) {
+            gotop.addEventListener("click", (e) => {
+              e.preventDefault();
+              scrollTo(html, 0, 800);
+            });
+          }
+        });
+      })();
+      // go-top-end
+    </script>
+  </body>
+</html>
