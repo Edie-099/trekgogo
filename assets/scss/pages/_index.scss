@@ -71,21 +71,21 @@ h1.title-h1 {
 
 .card-search select {
     border-radius: 12px;
-    padding: 16px;
+    padding: 8px 20px 8px 35px;
+    
+}
+.card-search select.mr-12{margin-right: 12px;}
+.card-search select option {margin-left: 50px;}
+.icon-calender{
+    background: url(../images/icon-Calendar.svg) no-repeat left 10px center;
+    background-size: 5%;
+    display: inline-block;
 }
 
-.icon-calender {
-    background: url(../images/cion-calender.svg) no-repeat left center;
-    background-size: 100%;
-    height: 30px;
-    width: 30px;
-}
-
-i.icon-map {
-    background: url(../images/cion-map.svg) no-repeat left center;
-    background-size: 100%;
-    height: 30px;
-    width: 30px;
+.icon-map {
+    background: url(../images/icon-map.svg) no-repeat left 10px center;
+    background-size: 5%;
+ 
 }
 
 .Sec1_icon_01 {
@@ -309,13 +309,13 @@ i.icon-map {
     max-width: 1296px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    // padding: 20px;
 }
 
 .track-cards {
     display: flex;
     transition: transform 0.5s ease;
-     gap: 12px;
+     gap: 20px;
 }
 
 .track-card :first-child {}
@@ -405,7 +405,7 @@ i.icon-map {
 
 /* PC: 箭頭卡在第一張卡片邊界線 */
 .track-arrow.left {
-    left: 8px;
+    left:10%;
     width: 80px;
     height: 80px;
     background: #fff url(../images/Arrow-l.svg) no-repeat center center;
@@ -415,10 +415,29 @@ i.icon-map {
 }
 
 .track-arrow.right {
-    right: 8px;
+    right: 10%;
     width: 80px;
     height: 80px;
     // background: #fff url(../images/Arrow-r.svg) no-repeat center center;
+    background-size: 25%;
+    display: flex;
+
+}
+.track-arrow.left:hover {
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    background: #D5E8D9 url(../images/Arrow-l.svg) no-repeat center center;
+    background-size: 25%;
+    display: flex;
+    border: 1px solid #325B53;
+}
+
+.track-arrow.right:hover {
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    background: #D5E8D9;
     background-size: 25%;
     display: flex;
 
@@ -550,7 +569,7 @@ i.icon-map {
     }
 
     .card-search select {
-        margin: 8px auto;
+        margin: 8px 0;
         width: 100%;
     }
 

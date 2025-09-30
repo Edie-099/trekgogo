@@ -16,10 +16,14 @@ function initSlider(content) {
 
   function update() {
     if (!card) return;
+    const style = window.getComputedStyle(cards);
+    const gap = parseInt(style.gap) || 0; // 讀取 gap
     const cardWidth = card.offsetWidth || 0;
+    const step = cardWidth + gap;
+
     const maxIndex = Math.max(cards.children.length - getVisible(), 0);
     if (index > maxIndex) index = maxIndex;
-    cards.style.transform = `translateX(${-index * cardWidth}px)`;
+    cards.style.transform = `translateX(${-index * step}px)`;
   }
 
   function reset() {
@@ -177,4 +181,3 @@ ready((event) => {
     scrollTo(html, 0, 800);
   });
 });
- 
