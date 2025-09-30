@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trekgogo</title>
+    </head>
+
+    <body>
+        <%- include('./layout/header'); -%>
+
+        <main class="learning">
+            <!-- 登山學堂 -->
+            <section class="container-xl py-8 py-lg-11">
+                <div>
+                    <!-- 標題 -->
+                    <div class="mb-6 mb-lg-8 text-center">
+                        <h2
+                            class="mb-4 fw-bold learning-title text-neutral-700"
+                        >
+                            登山學堂
+                        </h2>
+                        <p class="fs-6 fs-lg-4 lh-lg text-neutral-600">
+                            學習登山知識，從入門至進階
+                        </p>
+                    </div>
+                    <!-- 入門與進階 -->
+                    <div class="row flex-column flex-lg-row gap-4 gap-lg-0">
+                        <!-- 入門 -->
+                        <div class="col col-lg-6">
+                            <a href="#" class="course-card">
+                                <img
+                                    src="/assets/images/entry-level.png"
+                                    alt="前往登山入門課程示意圖"
+                                />
+                                <h5 class="fw-bold fs-2 fs-lg-1 text-white">
+                                    入門
+                                </h5>
+                            </a>
+                        </div>
+                        <!-- 進階 -->
+                        <div class="col col-lg-6">
+                            <a href="#" class="course-card">
+                                <img
+                                    src="/assets/images/advanced-level.png"
+                                    alt="前往登山進階課程示意圖"
+                                />
+                                <h5 class="fw-bold fs-2 fs-lg-1 text-white">
+                                    進階
+                                </h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 登山診斷工具 -->
+            <section>
+                <header class="py-4 py-lg-9 bg-white">
+                    <h3
+                        class="learning-title text-neutral-700 fw-bold text-center"
+                    >
+                        想知道適合爬什麼山？<br />
+                        <span class="d-lg-none">使用診斷工具產生專屬清單</span>
+                        <span class="d-none d-lg-block"
+                            >用下方診斷工具測出你的等級並直接產生專屬清單</span
+                        >
+                    </h3>
+                </header>
+
+                <div class="bg-neutral-100">
+                    <div class="container-xl">
+                        <!-- 登山診斷小工具 -->
+                        <section class="pt-8 pb-6 pt-lg-11 pb-lg-8">
+                            <!-- 標題 -->
+                            <div class="text-center mb-7 mb-lg-8">
+                                <h2 class="fs-4 fs-lg-1 fw-bold mb-2 mb-lg-4">
+                                    登山診斷小工具
+                                </h2>
+                                <p class="fs-lg-4 lh-lg-lg text-neutral-600">
+                                    歡迎來到您的登山能力診斷！透過回答以下問題，讓我們一起找出最適合您的登山路線與學習建議。
+                                </p>
+                            </div>
+                            <!-- 進度條 -->
+                            <div class="mb-6">
+                                <ul class="learning-progress-bar">
+                                    <li
+                                        class="learning-progress-step active"
+                                    ></li>
+                                    <li class="learning-progress-step"></li>
+                                    <li class="learning-progress-step"></li>
+                                    <li class="learning-progress-step"></li>
+                                </ul>
+                            </div>
+                            <!-- 問卷 -->
+                            <div class="learning-survery">
+                                <div class="text-center">
+                                    <div
+                                        class="learning-survry-card learning-survery-tool px-4"
+                                    >
+                                        <!-- 問卷類型部分 -->
+                                        <h3
+                                            class="d-flex flex-column fs-4 fs-lg-1 fw-bold text-neutral-700 mb-7 mb-lg-8"
+                                        >
+                                            <span
+                                                class="fs-6 fs-lg-5 fw-medium text-secondary-300 mb-2"
+                                                >第一部分</span
+                                            >經驗分享與評估
+                                        </h3>
+                                        <!-- 問券內容 -->
+                                        <div
+                                            class="row flex-column align-items-center"
+                                        >
+                                            <!-- 第一題 -->
+                                            <div
+                                                class="col col-lg-6 mb-7 mb-lg-8"
+                                            >
+                                                <div class="d-flex gap-2">
+                                                    <div style="padding: 2px">
+                                                        <div
+                                                            class="survery-badge fs-6 fw-medium text-white bg-primary-200 rounded-circle"
+                                                        >
+                                                            1
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <!-- 題目 -->
+                                                        <h5
+                                                            class="fs-6 fs-lg-5 fw-bold fw-lg-medium text-start mb-3"
+                                                        >
+                                                            您過去一年進行登山或健行的次數是？
+                                                        </h5>
+                                                        <!-- 選項 -->
+                                                        <div
+                                                            class="text-neutral-600 text-start"
+                                                        >
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-times"
+                                                                    id="climb-time-option1"
+                                                                    value="newbie"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-time-option1"
+                                                                >
+                                                                    從未，我是完全的新手
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-times"
+                                                                    id="climb-time-option2"
+                                                                    value="one-to-three"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-time-option2"
+                                                                >
+                                                                    1-3
+                                                                    次，偶爾會跟朋友去爬
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-times"
+                                                                    id="climb-time-option3"
+                                                                    value="three-plus"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-time-option3"
+                                                                >
+                                                                    3
+                                                                    次以上，我對爬山有些經驗
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-times"
+                                                                    id="climb-time-option4"
+                                                                    value="weekly"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-time-option4"
+                                                                >
+                                                                    幾乎每週，我是個登山愛好者
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 第二題 -->
+                                            <div
+                                                class="col col-lg-6 mb-7 mb-lg-8"
+                                            >
+                                                <div class="d-flex gap-2">
+                                                    <div style="padding: 2px">
+                                                        <div
+                                                            class="survery-badge fs-6 fw-medium text-white bg-primary-200 rounded-circle"
+                                                        >
+                                                            2
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <!-- 題目 -->
+                                                        <h5
+                                                            class="fs-6 fs-lg-5 fw-bold fw-lg-medium text-start mb-3"
+                                                        >
+                                                            您過去的登山經驗，主要路線屬於哪一類？
+                                                        </h5>
+                                                        <!-- 選項 -->
+                                                        <div
+                                                            class="text-neutral-600 text-start"
+                                                        >
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-experience"
+                                                                    id="climb-experience-option1"
+                                                                    value="flat-trail"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-experience-option1"
+                                                                >
+                                                                    平緩的郊山步道（例如大坑步道、象山）
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-experience"
+                                                                    id="climb-experience-option2"
+                                                                    value="intermediate-trail"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-experience-option2"
+                                                                >
+                                                                    中級山或難度較高的步道（例如鳶嘴山、合歡山）
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0 mb-3"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-experience"
+                                                                    id="climb-experience-option3"
+                                                                    value="high-altitude"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-experience-option3"
+                                                                >
+                                                                    高海拔的高山或百岳
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="form-check d-flex align-items-center p-0"
+                                                            >
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="radio"
+                                                                    name="climb-experience"
+                                                                    id="climb-experience-option4"
+                                                                    value="no-experience"
+                                                                />
+                                                                <label
+                                                                    class="form-check-label"
+                                                                    for="climb-experience-option4"
+                                                                >
+                                                                    完全沒有經驗
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 上、下一步 -->
+                                            <div
+                                                class="d-flex flex-column-reverse flex-lg-row justify-content-lg-center gap-4 gap-lg-7"
+                                            >
+                                                <button
+                                                    type="button"
+                                                    class="btn custom-btn-outline learning-btn"
+                                                >
+                                                    上一步
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn custom-btn learning-btn"
+                                                >
+                                                    下一步
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- 識別證裝飾 -->
+                                        <div class="position-absolute start-0 d-none d-lg-block" style="bottom: 60.68px;">
+                                            <img src="/assets/images/svg/img_card.svg" alt="識別證圖示">
+                                        </div>
+                                        <!-- 相機裝飾圖示 -->                                      
+                                        <div class="camera-decorate">
+                                            <img src="/assets/images/svg/camera.svg" alt="相機圖示">
+                                        </div>
+                                        <!-- 圖片裝飾圖示 -->
+                                        <div class="picture-decorate">
+                                            <img src="/assets/images/svg/picture.svg" alt="圖片圖示">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 行前自我檢查 -->
+                        <section class="pt-6 pb-8 pt-lg-8 pb-lg-11">
+                            <!-- 標題 -->
+                            <div class="text-center mb-7 mb-lg-8">
+                                <h2 class="fs-4 fs-lg-1 fw-bold mb-2 mb-lg-4">
+                                    行前自我檢查
+                                </h2>
+                                <p class="fs-lg-4 lh-lg text-neutral-600">
+                                    助您萬無一失，掌握啟程所需
+                                </p>
+                            </div>
+                            <!-- 搜尋框 -->
+                            <div class="learning-survry-card p-4 p-lg-7">
+                                <!-- 清單標題跟過往紀錄 -->
+                                <div
+                                    class="d-flex flex-column align-items-center d-lg-grid w-100 mb-7 mb-lg-8"
+                                    style="grid-template-columns: 1fr auto 1fr"
+                                >
+                                    <h3
+                                        class="fs-4 fw-bold fs-lg-1 text-center w-100 w-lg-auto m-0 mb-7 mb-lg-0"
+                                        style="grid-column: 2 / 3"
+                                    >
+                                        請輸入行程資訊以產生專屬檢查清單
+                                    </h3>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center justify-content-lg-end"
+                                        style="grid-column: 3 / 4"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="text-primary-300 fs-5 fw-medium d-inline-flex align-items-center"
+                                        >
+                                            查詢過往紀錄
+                                            <span
+                                                class="ms-2 flex-shrink-0 text-primary-300"
+                                            >
+                                                <svg
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M19.7691 8.88454L11.8845 16.7691L3.99999 8.88454"
+                                                        stroke="currentColor"
+                                                        stroke-width="2.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 輸入框 -->
+                                <div class="row justify-content-center">
+                                    <div class="col col-lg-8">
+                                        <div
+                                            class="row flex-column gap-6 gap-lg-0 flex-lg-row flex-nowrap learning-survry-input"
+                                        >
+                                            <!-- 山名 -->
+                                            <div class="col col-lg-4">
+                                                <label
+                                                    for="mountain-name"
+                                                    class="form-label fs-5 fw-medium text-neutral-700"
+                                                    >山名</label
+                                                >
+                                                <input
+                                                    type="text"
+                                                    class="form-control learning-input-btn  fw-medium"
+                                                    id="mountain-name"
+                                                    placeholder="請輸入山名"
+                                                />
+                                            </div>
+                                            <!-- 路線 -->
+                                            <div class="col col-lg-4">
+                                                <label
+                                                    for="mountain-route"
+                                                    class="form-label fs-5 fw-medium text-neutral-700"
+                                                    >路線</label
+                                                >
+                                                <div
+                                                    class="dropdown custom-select-dropdown"
+                                                >
+                                                    <button
+                                                        class="btn w-100 text-neutral-400 fw-medium d-flex align-items-center justify-content-between learning-input-btn"
+                                                        type="button"
+                                                        id="routeDropdown"
+                                                        data-bs-toggle="dropdown"
+                                                    >
+                                                        <span>請選擇路線</span>
+                                                        <span
+                                                            class="text-neutral-600 flex-shrink-0"
+                                                        >
+                                                            <svg
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19.7691 8.88454L11.8845 16.7691L3.99999 8.88454"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                />
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+
+                                                    <ul
+                                                        class="dropdown-menu w-100"
+                                                        aria-labelledby="routeDropdown"
+                                                    >
+                                                        <li>
+                                                            <a
+                                                                class="dropdown-item"
+                                                                href="#"
+                                                                data-value="route-a"
+                                                                >路線 A</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="dropdown-item"
+                                                                href="#"
+                                                                data-value="route-b"
+                                                                >路線 B</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="dropdown-item"
+                                                                href="#"
+                                                                data-value="route-c"
+                                                                >路線 C</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- 天數 -->
+                                            <div class="col col-lg-4">
+                                                <label
+                                                    for="mountain-route"
+                                                    class="form-label fs-5 fw-medium text-neutral-700"
+                                                    >預計天數</label
+                                                >
+                                                <!-- 大尺寸天數 -->
+                                                <div class="d-none d-lg-block">
+                                                    <div
+                                                        class="dropdown custom-select-dropdown"
+                                                    >
+                                                        <button
+                                                            class="btn w-100 text-neutral-400 fw-medium d-flex align-items-center justify-content-between learning-input-btn"
+                                                            type="button"
+                                                            id="routeDropdown"
+                                                            data-bs-toggle="dropdown"
+                                                        >
+                                                            <span>請選擇天數</span>
+                                                            <span
+                                                                class="text-neutral-600 flex-shrink-0"
+                                                            >
+                                                                <svg
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M19.7691 8.88454L11.8845 16.7691L3.99999 8.88454"
+                                                                        stroke="currentColor"
+                                                                        stroke-width="2.5"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+    
+                                                        <ul
+                                                            class="dropdown-menu w-100"
+                                                            aria-labelledby="routeDropdown"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    class="dropdown-item"
+                                                                    href="#"
+                                                                    data-value="1"
+                                                                    >1</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    class="dropdown-item"
+                                                                    href="#"
+                                                                    data-value="2"
+                                                                    >2</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    class="dropdown-item"
+                                                                    href="#"
+                                                                    data-value="3"
+                                                                    >3</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    class="dropdown-item"
+                                                                    href="#"
+                                                                    data-value="3+"
+                                                                    >...</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- 小尺寸天數 -->
+                                                <div
+                                                    class="input-group d-flex d-lg-none learning-input-btn d-flex justify-content-between"
+                                                >
+                                                    <span
+                                                        class="input-group-text text-neutral-600 p-0 border-0 bg-transparent"
+                                                    >
+                                                        <svg
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M12.8845 19.7691L4.99997 11.8845L12.8845 4"
+                                                                stroke="currentColor"
+                                                                stroke-width="2.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </span>
+
+                                                    <input
+                                                        type="number"
+                                                        class="form-control text-center fw-medium text-neutral-700 border-0 p-0"
+                                                        id="mountain-days-input"
+                                                        value="1"
+                                                        min="1"
+                                                        readonly
+                                                    />
+                                                    <span
+                                                        class="input-group-text text-neutral-600 p-0 border-0 bg-transparent"
+                                                    >
+                                                        <svg
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M10.8845 19.7691L18.7691 11.8845L10.8845 4"
+                                                                stroke="currentColor"
+                                                                stroke-width="2.5"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- banner-匯聚登山智慧，共創美好回憶- -->
+            <div class="bg-primary-300 py-8 py-lg-11 learning-banner">
+                <p
+                    class="learning-title fw-bold text-white d-flex flex-column flex-lg-row justify-content-center align-items-center"
+                >
+                    匯聚登山智慧
+                    <span class="d-none d-lg-block">，</span>
+                    <span>共創美好回憶</span>
+                </p>
+            </div>
+
+            <!-- 登山經驗與社群 -->
+            <section class="py-8 py-lg-11">
+                <!-- 標題 -->
+                <div class="text-center mb-7 mb-lg-8">
+                    <h2 class="learning-title fw-bold mb-4 text-neutral-700">
+                        登山經驗與社群
+                    </h2>
+                    <p class="lh-lg text-neutral-600 fs-lg-4">
+                        分享經驗，帶來成長與共好
+                    </p>
+                </div>
+                <div class="container-xl">
+                    <!-- 社群卡片 -->
+                    <div class="mb-7 mb-lg-8 position-relative">
+                        <div class="row flex-nowrap overflow-x-auto g-3 g-lg-6">
+                            <!-- Fan的心得 -->
+                            <div class="col col-lg-4">
+                                <div class="card community-card">
+                                    <img
+                                        src="/assets/images/community-1.jpg"
+                                        class="card-img-top"
+                                        alt="Fan的登山照"
+                                    />
+                                    <div class="card-body">
+                                        <h5
+                                            class="card-title fw-bold py-3 mb-2 text-neutral-700"
+                                        >
+                                            第一次爬鳶嘴山
+                                        </h5>
+                                        <p
+                                            class="card-text fs-7 fs-lg-6 text-neutral-500 lh-lg line-clamp-2 mb-6"
+                                        >
+                                            主要有兩個登山口，形成鳶嘴山的小 O
+                                            型路線，分別是 27K 登山口及 27.3K
+                                            登山口。輕鬆走完鳶嘴山大約需要 3.5
+                                            至 4 小時。路徑概況：沿途走
+                                        </p>
+                                        <!-- 頭像與評分 -->
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <!-- 頭像 -->
+                                            <div class="d-flex">
+                                                <div
+                                                    class="community-selfie me-2"
+                                                >
+                                                    <img
+                                                        src="/assets/images/fan_Selfie.jpg"
+                                                        alt="Fan自拍照"
+                                                        class="rounded-circle"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="lh-lg text-neutral-600"
+                                                >
+                                                    <span class="d-block"
+                                                        >Fan</span
+                                                    >
+                                                    <time
+                                                        datetime="2025-08-01"
+                                                        class="fs-7 d-block"
+                                                    >
+                                                        2025/08/01
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <!-- 評分 -->
+                                            <div class="gap-1">
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_outlined.svg"
+                                                    alt="star_outlined_icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Lily的心得 -->
+                            <div class="col col-lg-4">
+                                <div class="card community-card">
+                                    <img
+                                        src="/assets/images/community-2.jpg"
+                                        class="card-img-top"
+                                        alt="Lily的登山照"
+                                    />
+                                    <div class="card-body">
+                                        <h5
+                                            class="card-title fw-bold py-3 mb-2 text-neutral-700"
+                                        >
+                                            漫步雲端 （雪山）
+                                        </h5>
+                                        <p
+                                            class="card-text fs-7 fs-lg-6 text-neutral-500 lh-lg line-clamp-2 mb-6"
+                                        >
+                                            這次選擇了雪山主峰，還記得出發前，望著地圖上那條蜿蜒的路線，心裡是既興奮又忐忑。雪山主東，這兩個字承載著多少登山者的夢想與挑戰
+                                        </p>
+                                        <!-- 頭像與評分 -->
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <!-- 頭像 -->
+                                            <div class="d-flex">
+                                                <div
+                                                    class="community-selfie me-2"
+                                                >
+                                                    <img
+                                                        src="/assets/images/lily_Selfie.jpg"
+                                                        alt="Lily自拍照"
+                                                        class="rounded-circle"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="lh-lg text-neutral-600"
+                                                >
+                                                    <span class="d-block"
+                                                        >Lily</span
+                                                    >
+                                                    <time
+                                                        datetime="2025-07-11 d-block"
+                                                        class="fs-7"
+                                                    >
+                                                        2025/07/11
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <!-- 評分 -->
+                                            <div class="gap-1">
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_outlined.svg"
+                                                    alt="star_outlined_icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- OMG的心得 -->
+                            <div class="col col-lg-4">
+                                <div class="card community-card">
+                                    <img
+                                        src="/assets/images/community-3.jpg"
+                                        class="card-img-top"
+                                        alt="OMG的登山照"
+                                    />
+                                    <div class="card-body">
+                                        <h5
+                                            class="card-title fw-bold py-3 mb-2 text-neutral-700"
+                                        >
+                                            挑戰自我：谷關七雄之馬崙山
+                                        </h5>
+                                        <p
+                                            class="card-text fs-7 fs-lg-6 text-neutral-500 lh-lg line-clamp-2 mb-6"
+                                        >
+                                            馬崙山，海拔 2305
+                                            公尺，雖然路途遙遠，但沿途的杉木林道和巨木群讓人心曠神怡。登頂後的展望更是壯麗，所有的疲憊都值得了！
+                                        </p>
+                                        <!-- 頭像與評分 -->
+                                        <div
+                                            class="d-flex justify-content-between align-items-center"
+                                        >
+                                            <!-- 頭像 -->
+                                            <div class="d-flex">
+                                                <div
+                                                    class="community-selfie me-2"
+                                                >
+                                                    <img
+                                                        src="/assets/images/omg_Selfie.jpg"
+                                                        alt="OMG自拍照"
+                                                        class="rounded-circle"
+                                                    />
+                                                </div>
+                                                <div
+                                                    class="lh-lg text-neutral-600"
+                                                >
+                                                    <span class="d-block"
+                                                        >OMG</span
+                                                    >
+                                                    <time
+                                                        datetime="2025-04-01"
+                                                        class="fs-7 d-block"
+                                                    >
+                                                        2025/04/01
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <!-- 評分 -->
+                                            <div class="gap-1">
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_filled.svg"
+                                                    alt="star_filled_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_outlined.svg"
+                                                    alt="star_outlined_icon"
+                                                />
+                                                <img
+                                                    src="/assets/images/svg/Star_outlined.svg"
+                                                    alt="star_outlined_icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="custom-carousel-control-prev-icon">
+                            <div
+                                class="d-flex justify-content-center align-items-center"
+                            >
+                                <img
+                                    src="/assets/images/svg/left_arrow.svg"
+                                    alt="左箭頭"
+                                />
+                            </div>
+                        </button>
+                        <button class="custom-carousel-control-next-icon">
+                            <div
+                                class="d-flex justify-content-center align-items-center"
+                            >
+                                <img
+                                    src="/assets/images/svg/right_arrow.svg"
+                                    alt="右箭頭"
+                                />
+                            </div>
+                        </button>
+                    </div>
+                    <!-- 分享 -->
+                    <a
+                        href="#"
+                        type="button"
+                        class="btn custom-btn-outline community-btn"
+                    >
+                        我要分享
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <%- include('./layout/go-top'); -%> <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js">
+
+            // go-top-start
+            var ready = (callback) => {
+              if (document.readyState != "loading") callback();
+              else document.addEventListener("DOMContentLoaded", callback);
+            };
+
+            ready((event) => {
+              const scrollTo = (element, to, duration) => {
+                if (duration <= 0) {
+                  return;
+                }
+                var difference = to - element.scrollTop;
+                var perTick = (difference / duration) * 10;
+
+                setTimeout(() => {
+                  element.scrollTop = element.scrollTop + perTick;
+                  if (element.scrollTop === to) {
+                    return;
+                  }
+                  scrollTo(element, to, duration - 10);
+                }, 10);
+              };
+
+              var gotop = document.querySelector(".gotop");
+              var html = document.documentElement;
+
+              gotop.addEventListener("click", (e) => {
+                e.preventDefault();
+                scrollTo(html, 0, 800);
+              });
+            });
+            // go-top-end
+        </script>
+    </body>
+</html>
