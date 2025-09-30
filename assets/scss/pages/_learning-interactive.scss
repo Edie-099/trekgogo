@@ -1,0 +1,317 @@
+// 登山學堂 卡片
+.course-card {
+    border: 1px solid $neutral-300;
+    height: 180px;
+    display: block;
+    overflow: hidden;
+    border-radius: 32px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // 偽元素來呈現漸變效果
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(42, 51, 66, 0), rgba(42, 51, 66, 0.5));
+        z-index: 1;
+    }
+
+    h5 {
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+}
+
+// 登山學堂display文字
+.learning-title {
+    font-size: 28px;
+}
+
+@media (min-width: 992px) {
+    .course-card {
+        height: 327px;
+    }
+
+    .learning-title {
+        font-size: 54px;
+    }
+}
+
+// 診斷小工具進度條
+.learning-progress-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 290px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        // 重點!根據圓圈寬度來精確定位線條起點和終點
+        left: calc(18px / 2);
+        right: calc(18px / 2);
+        transform: translateY(-50%);
+        border-top: 2px dotted $neutral-300;
+        z-index: 0;
+    }
+}
+
+// 診斷小工具原點樣式
+.learning-progress-step {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $white;
+    border: 2px solid $neutral-300;
+    z-index: 1;
+
+    &.active {
+        background-color: $secondary-300;
+        border-color: $secondary-200;
+        box-shadow: 0 2px 16px 0 rgba(176, 142, 95, 0.2);
+    }
+}
+
+@media (min-width: 992px) {
+    .learning-progress-bar {
+        max-width: 432px;
+
+        // 重點!在大螢幕下調整偽元素的定位
+        &::after {
+            left: calc(26px / 2);
+            right: calc(26px / 2);
+        }
+    }
+
+    .learning-progress-step {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+// 問卷card樣式
+.learning-survry-card {
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px 0 rgba(42, 51, 66, 0.16);
+    position: relative; 
+    overflow: hidden;   
+}
+
+
+// 診斷小工具 
+.learning-survery-tool {
+    padding-top: 16px;
+    padding-bottom: 72px;
+
+    .custom-btn-outline {
+        color: $neutral-400;
+        border-color: $neutral-400;
+    }
+}
+
+// 裝飾圖示
+.camera-decorate {
+    position: absolute;
+    width: 49.02px;
+    height: 39.75px;
+    right: 25.76px;
+    bottom: -8.72px;
+    transform: rotate(19.54deg);
+
+}
+
+@media (min-width:992px) {
+    .camera-decorate {
+        width: 68.72px;
+        height: 49.82px;
+        right: 58.64px;
+        bottom: 47.08px;
+        transform: rotate(0);
+    }
+}
+
+.picture-decorate {
+    position: absolute;
+    width: 30.54px;
+    height: 20.6px;
+    right: -4.95px;
+    bottom: 42.18px;
+    transform: rotate(19.54deg);
+}
+
+@media (min-width:992px) {
+    .picture-decorate {
+        width: 48.25px;
+        height: 32.56px;
+        right: 28.95px;
+        bottom: 135.64px;
+        transform: rotate(0);
+    }
+}
+
+// 題目數字圖
+.survery-badge {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+.learning-survery .form-check-input {
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+    border-color: $neutral-400;
+    margin: 0;
+    margin-right: 8px;
+}
+
+.survery-options {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 319px;
+}
+
+@media (min-width: 992px) {
+    .survery-options {
+        max-width: none;
+    }
+
+    .learning-btn {
+    min-width: 240px;
+    }
+}
+
+// 自我檢查
+.learning-input-btn {
+    height: 56px;
+    background-color: $white;
+    border-radius: 12px; 
+    border: 2px solid #C7CDD4; 
+    padding: 16px;
+    box-shadow: none ;
+
+    
+    &:focus,
+    &:focus-visible {
+        border-color:#2B897A; 
+    }
+}
+
+// 匯聚登山智慧Banner
+.learning-banner {
+    background-image: url(/assets/images/svg/banner-bg.svg);
+    background-repeat: no-repeat;
+    background-position:  calc(50% - 100px) 90px;
+    background-size: cover;
+}
+
+@media (min-width: 556px) {
+    .learning-banner{
+        background-position: center 90px;
+    }
+}
+
+@media (min-width:992px) {
+    .learning-banner{
+        background-position: center 150px;
+    }
+}
+
+// 社群
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+}
+
+.community-selfie {
+    width: 48px;
+    height: 48px;
+} 
+
+.community-card {
+    min-width: 316px;
+    border: 1px solid $neutral-200;
+    box-shadow: 0px 2px 24px 0px rgba(42, 51, 66, 0.1);
+}
+
+.community-btn {
+    width: 100%;
+    flex-grow: 1;
+}
+
+@media (min-width: 376px) {
+    .community-btn {
+        max-width: 375px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .community-btn {
+        width: 240px;
+        min-width: 240px; 
+    }
+}
+
+// 箭頭
+.custom-carousel-control-prev-icon{
+    position: absolute;
+    bottom: 216px;
+    left: -40px;
+    transition: all 0.1s ease;
+        transform: scale(1);
+}
+
+.custom-carousel-control-next-icon {
+    position: absolute;
+    bottom: 216px;
+    right: -40px;
+    transition: all 0.5s ease;
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .custom-carousel-control-prev-icon {
+        left: 0;
+    }
+    .custom-carousel-control-next-icon {
+        right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-carousel-control-prev-icon,
+    .custom-carousel-control-next-icon {
+        display: none;
+    }
+}
+
+
+
+

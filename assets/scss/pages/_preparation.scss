@@ -1,0 +1,484 @@
+/* === Hero === */
+
+/* 行前安全準備區塊 */
+.hero {
+  position: relative;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  padding-block: clamp(24px, 5vw, 64px);
+  background-color: $white;
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background: url("/assets/images/prepare_PrepareHeroImage.png") center top/
+      cover no-repeat;
+    filter: brightness(0.92);
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    width: min(980px, 94%);
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: 16px; // 也可用 $border-radius-xl
+    box-shadow: 0 10px 30px rgba($black, 0.12); // 也可改成 $box-shadow-lg
+    padding: clamp(16px, 3.2vw, 32px);
+  }
+
+  &__title {
+    font-weight: 800;
+    color: $neutral-700; // 客製中性的色
+    // 若想更深：color: $body-color; // = $gray-900
+  }
+
+  //   &__form {
+  //     /* 需要額外間距就放這裡 */
+  //   }
+}
+
+/* 調整原生 select 的箭頭顏色（沿用form-select 變數設定） */
+.form-select {
+  background-position: right $form-select-padding-x center;
+  background-size: 16px 12px;
+  &:focus {
+    border-color: $input-focus-border-color; //  $primary-200
+    box-shadow: 0 0 0 $input-focus-width rgba($primary, $focus-ring-opacity);
+  }
+}
+
+/* 保險指南 */
+/* ===== 保險指南：等高卡片 + 覆蓋箭頭 ===== */
+
+/* 可調整：上方灰色區塊高度（一般卡片 & 插畫卡片） */
+:root {
+  --prep-header-h: 274px; /* 一般卡片 header 高度 */
+  --prep-header-h-illus: 274px; /* 插畫卡片 header 高度（第三張） */
+}
+
+.prep {
+  &__carousel {
+    position: relative;
+    padding-inline: 48px; /* 給左右箭頭一點空間 */
+  }
+  &__track {
+    overflow: visible;
+  }
+}
+
+/* ==== 卡片本體（整張等高） ==== */
+.prep-card {
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba($black, 0.06);
+  overflow: hidden;
+
+  /* 重要：整張卡片等高 */
+  display: flex;
+  flex-direction: column;
+
+  /* 上方灰色區塊：固定高度、Logo 置中、左上膠囊 */
+  &__header {
+    height: var(--prep-header-h);
+    background: $neutral-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    border: 1px solid $neutral-300;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $neutral-600;
+    white-space: nowrap;
+  }
+
+  &__logo {
+    max-height: calc(var(--prep-header-h) - 48px); /* 上下留白 */
+    max-width: 80%;
+    object-fit: contain;
+  }
+  /* 想讓 logo 更大可加在該張上 */
+  &__logo--big {
+    max-height: calc(var(--prep-header-h) - 32px);
+    max-width: 90%;
+  }
+
+  /* 內容用 flex 撐開，按鈕用 mt-auto 貼底 */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $neutral-700;
+  }
+  &__list {
+    color: $neutral-500;
+    padding-left: 1rem;
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+  &__price {
+    color: $neutral-600;
+  }
+}
+
+/* 插畫卡片：header 更高，圖更大（只影響加了 .prep-card--illustration 的卡） */
+.prep-card--illustration {
+  .prep-card__header {
+    height: var(--prep-header-h-illus);
+  }
+  .prep-card__logo {
+    max-height: calc(var(--prep-header-h-illus) - 48px);
+  }
+}
+
+/* ==== 覆蓋式左右箭頭（用你給的風格） ==== */
+.custom-carousel-control-prev-icon,
+.custom-carousel-control-next-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: $primary-300;
+  border: 2.5px solid $primary-300;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 1;
+  box-shadow: 0px 8px 24px #2a334233;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background-color: rgba(#d5e8d9, 0.5);
+  }
+
+  /* 箭頭圖樣（吃 color），把路徑換成你的檔案 */
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: currentColor;
+    mask: url("/assets/images/Arrow-l.svg") center / contain no-repeat;
+    -webkit-mask: url("/assets/images/Arrow-r.svg") center / contain no-repeat;
+  }
+}
+.custom-carousel-control-prev-icon {
+  left: 8px;
+  transform: translateY(-50%) scaleX(-1);
+}
+.custom-carousel-control-next-icon {
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  .prep__carousel {
+    padding-inline: 0;
+  }
+  .custom-carousel-control-prev-icon,
+  .custom-carousel-control-next-icon {
+    display: none;
+  }
+}
+
+/* ==== 底線 tabs 風格（可選） ==== */
+.prep__tabs--underline {
+  .nav-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 6px 0;
+    color: $neutral-600;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 3px;
+      background: $primary-200;
+      border-radius: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    &:hover {
+      color: $primary-200;
+    }
+    &.active {
+      color: $primary-200;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+// 裝備指南
+:root {
+  --equip-header-h: 274px;
+}
+
+.equip {
+  &__carousel {
+    position: relative;
+    padding-inline: 48px;
+  }
+  &__track {
+    overflow: visible;
+  }
+}
+
+/* 卡片基底：和保險指南一致 */
+.equip-card {
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba($black, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: var(--equip-header-h);
+    background: $neutral-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    border: 1px solid $neutral-300;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $neutral-600;
+  }
+
+  &__img {
+    max-height: calc(var(--equip-header-h) - 48px);
+    max-width: 90%;
+    object-fit: contain;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 700;
+    color: $neutral-700;
+  }
+  &__tags {
+    color: $primary-300;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Tabs 底線版 */
+.equip__tabs--underline {
+  .nav-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 6px 0;
+    color: $neutral-600;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 3px;
+      background: $primary-200;
+      border-radius: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    &:hover {
+      color: $primary-200;
+    }
+    &.active {
+      color: $primary-200;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+// 工具指南
+/* ===== 工具指南（等高卡片＋背景圖＋底部分隔） ===== */
+
+/* 可調整：卡片上方灰底高度、背景不透明度 */
+:root {
+  --tool-header-h: 274px; /* 卡片灰色區塊高度 */
+  --tools-bg-opacity: 0.12; /* 區塊大背景淡度 */
+}
+
+.tools {
+  position: relative;
+  isolation: isolate; /* 讓 ::before 疊在區塊底層 */
+  background: url("/assets/images/BG.png") center/cover no-repeat;
+
+  /* 區塊背景圖（整段雪山氛圍） */
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     inset: 0;
+  //     background: url("/assets/images/BG.png") center/cover no-repeat;
+  //     opacity: var(--tools-bg-opacity);
+  //     pointer-events: none;
+  //     z-index: -1;
+  //   }
+
+  &__carousel {
+    position: relative;
+    padding-inline: 48px;
+  }
+  &__track {
+    overflow: visible;
+  }
+}
+
+/* 底部分隔（到 footer 前） */
+.section-divider {
+  &--mountain {
+    height: 160px; /* 依設計調整高度 */
+    background: url("/assets/images/prepare_FooterDecoration.png") center/cover
+      no-repeat;
+    margin-top: 48px;
+  }
+}
+
+/* Tabs：沿用底線風格 */
+.tools__tabs--underline {
+  .nav-link {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 6px 0;
+    color: $neutral-600;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      height: 3px;
+      background: $primary-200;
+      border-radius: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+    &:hover {
+      color: $primary-200;
+    }
+    &.active {
+      color: $primary-200;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+/* 卡片（與前面 equip-card/ prep-card 規格一致） */
+.tool-card {
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba($black, 0.06);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: var(--tool-header-h);
+    background: $neutral-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #fff;
+    border: 1px solid $neutral-300;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $neutral-600;
+    white-space: nowrap;
+  }
+
+  &__img {
+    max-height: calc(var(--tool-header-h) - 48px);
+    max-width: 90%;
+    object-fit: contain;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 700;
+    color: $neutral-700;
+  }
+  &__tags {
+    color: $primary-300;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 手機窄版：隱藏覆蓋箭頭、縮小左右留白 */
+@media (max-width: 991.98px) {
+  .tools__carousel {
+    padding-inline: 0;
+  }
+  .custom-carousel-control-prev-icon,
+  .custom-carousel-control-next-icon {
+    display: none;
+  }
+}
