@@ -12,9 +12,10 @@
   &__bg {
     position: absolute;
     inset: 0;
-    background: url("/assets/images/prepare_PrepareHeroImage.png") center top/
-      cover no-repeat;
-    filter: brightness(0.92);
+    background: url("/assets/images/prepare_PrepareHeroImage.png") top center /
+      auto 100% no-repeat;
+    background-color: #fff; /* 多出的位置會是白色 */
+    // filter: brightness(0.92);
   }
 
   &__card {
@@ -34,9 +35,9 @@
     // 若想更深：color: $body-color; // = $gray-900
   }
 
-  //   &__form {
-  //     /* 需要額外間距就放這裡 */
-  //   }
+  // &__form {
+
+  // }
 }
 
 /* 調整原生 select 的箭頭顏色（沿用form-select 變數設定） */
