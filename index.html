@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trekgogo</title>
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/scss/all.scss">
+  <link rel="stylesheet" href="../assets/scss/pages/index.scss">
+  <script src="../assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+    <main class="wrapper">
+      <!--快速查看天氣、抽籤與封山公告-->
+      <section class="Sec-content Sec1-bg">
+        <h1 class="mb-32 title-h1 ">快速查看天氣、抽籤與封山公告</h1>
+        <!-- 下拉選單-->
+        <div class="d-flex card-search">
+          <div class="container">
+            <div class="select-row mb-48">
+              <select class="icon-calender col-6  mr-12" aria-label="Default select example">
+                <option selected >2025 / 08 / 02</option>
+                <option selected>2025 / 08 / 03</option>
+              </select>
+              <select class="col-6 icon-map " aria-label="Default select example">
+                <option selected>太加縱走</option>
+                <option value="1">太加縱走</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-48">
+            <div class="row">
+              <div class="col-4-Sec1">
+                <h5 class="mb-24">天氣狀態</h5>
+                <div><i class="Sec1_icon_01"></i></div>
+                <h4>多雲短暫陣雨</h4>
+
+              </div>
+              <div class="col-4-Sec1">
+                <h5 class="mb-24">抽籤狀態</h5>
+                <div><i class="Sec1_icon_02"></i></div>
+                <h4 class="mb-2">需申請</h4>
+                <p class="warning">抽中才可入住山屋 !</p>
+              </div>
+              <div class="col-4">
+                <h5 class="mb-24">開放狀態</h5>
+                <div><i class="Sec1_icon_03"></i></div>
+                <h4>本日開放</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--為你量身打造的登山起點-->
+      <section class="Sec-content Sec2-bg position">
+        <h1 class="mb-16 title-h1 mb-11">為你量身打造的登山起點</h1>
+        <div class="d-flex text-box">
+          <P>從裝備準備、行程申請到出發準備，一次掌握所有自己的入門路線與安全注意事項。</P>
+          <div class="btn"><a href="search.html"><span class="Arrow">開始你的探索路線</span></a></btn>
+          </div>
+      </section>
+      <!--簡單 3 步驟開始登山生活-->
+      <section class="Sec-content Sec3-bg ">
+        <h1 class="mb-16 title-h1">簡單 3 步驟開始登山生活</h1>
+        <h5 class="mb-32">一步步引導新手，開啟專屬於你的登山之旅。</h5>
+        <div class="d-flex card-search">
+          <div class="container">
+            <ul class="row-Sec3 list-none">
+              <li class="col-4-Sec3 life-box">
+                <a href="learning-interactive.html">
+                  <img class="mb-7" src="../assets/images/in_img_01.png" alt="">
+                  <h5 class="mb-2">STEP 1</h5>
+                  <h4 class="mb-2">認識裝備</h4>
+                  <h6 class="">了解基本裝備怎麼選</h6>
+                </a>
+              </li>
+              <li class="col-4-Sec3 life-box">
+                <a href="learning-interactive.html">
+                  <img class="mb-7" src="../assets/images/in_img_02.png" alt="">
+                  <h5 class="mb-2">STEP 2</h5>
+                  <h4 class="mb-2">初階路線推薦</h4>
+                  <h6 class="">適合新手的親山步道</h6>
+                </a>
+              </li>
+              <li class="col-4-Sec3  life-box">
+                <a href="learning-interactive.html">
+                  <img class="mb-7" src="../assets/images/in_img_01.png" alt="">
+                  <h5 class="mb-2">STEP 3</h5>
+                  <h4 class="mb-2">組隊參考</h4>
+                  <h6 class="">找夥伴、學組隊注意事項</h6>
+                </a>
+              </li>
+            </ul>
+            <div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--分享你的第一步，讓經驗成為別人的指引-->
+      <section class="Sec-content Sec4-bg">
+        <h1 class="mb-16 title-h1">分享你的第一步，讓經驗成為別人的指引</h1>
+        <h5 class="mb-48">每個經驗都值得被看見，寫下你的新的，幫助更多新手勇敢出發。</h5>
+        <!-- 輪播main -->
+        <div class="track-tabs">
+
+          <!-- Tabs -->
+          <ul class="track-tab-list">
+            <li class="track-active" data-tab="day1">一日行程</li>
+            <li data-tab="multi">多日行程</li>
+            <li data-tab="abroad">海外</li>
+            <li data-tab="gear">裝備</li>
+          </ul>
+          <!-- Tab Content -->
+          <div class="track-tab-content track-active" id="day1">
+            <button class="track-arrow left"></button>
+            <div class="track-slider">
+              <div class="track-cards">
+                <div class="track-card">
+                  <span>一日行程</span><img src="https://picsum.photos/id/1011/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_01.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-card">
+                  <span>一日行程</span>
+                  <img src="https://picsum.photos/id/1012/400/300">
+                  <div class="box">
+                    <h3>初秋夜遊象山 2025/08/06</h3>
+                    <p>入秋的微涼的夜晚，一場即興的邀約，開啟我們的象山夜行。夜裡的涼風，沖淡了登頂後的悶熱，也出染了一</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_02.png" alt="">
+                        <p>王心妙</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-card">
+                  <span>二日行程</span>
+                  <img src="https://picsum.photos/id/1020/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_03.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-card">
+                  <span>一日行程</span>
+                  <img src="https://picsum.photos/id/1021/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_01.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-card"> <span>海外日行程</span><img src="https://picsum.photos/id/1015/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_01.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="track-arrow right">→</button>
+          </div>
+          <div class="track-tab-content" id="multi">
+            <button class="track-arrow left">←</button>
+            <div class="track-slider">
+              <div class="track-cards">
+                <div class="track-card">
+                  <span>多日行程</span>
+                  <img src="https://picsum.photos/id/1015/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_01.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-card">
+                  <span>多日行程</span>
+                  <img src="https://picsum.photos/id/1015/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_01.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-card">
+                  <span>多日行程</span>
+                  <img src="https://picsum.photos/id/1015/400/300">
+                  <div class="box">
+                    <h3>在天池賞 36 座百岳，福壽山農場住一星期也看不盡</h3>
+                    <p>碧藍如洗的天光、自然萬物的演化，在福壽山農場，一切依如時序春、夏、秋、冬，各有各的精彩。登高遠眺群峰，飽覽奇特壯觀的山容。</p>
+                    <div class="user-favorite">
+                      <div class="user">
+                        <img src="../assets/images/in_userimg_01.png" alt="">
+                        <p>唐葫盧</p>
+                      </div>
+                      <div class="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i class="track-active"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="track-arrow right"></button>
+          </div>
+          <div class="track-tab-content" id="gear">
+            <p>裝備推薦，敬請期待！</p>
+          </div>
+        </div>
+      </section>
+
+      <!--公告與懶人包區-->
+      <section class="Sec-content Sec5-bg">
+        <h1 class=" me-16 title-h1">公告與懶人包區</h1>
+        <h5 class="me-48">最實用的登山提醒與小知識，一站打包不漏接</h5>
+        <div class="bulletin-card">
+          <div class="bulletin-row">
+            <div class="news-itme">
+              <h2>最新公告</h2>
+              <ul class="list-none">
+                <li>
+                  <span class="green">封山公告</span>
+                  <P>玉山主峰今日 7/19 因強風暫停開放</P>
+                </li>
+                <li>
+                  <span class="green">抽籤結果</span>
+                  <P>奇萊南華登記號碼 150 已中籤</P>
+                </li>
+                <li>
+                  <span class="green">氣象快訊</span>
+                  <P>合歡山午後有雷陣雨，請攜雨具與備援裝備</P>
+                </li>
+              </ul>
+            </div>
+            <div class="news-itme">
+              <h2>懶人包連結卡片</h2>
+              <ul class="list-none">
+                <li>
+                  <span class="Brown">記得補水</span>
+                  <P>高山易脫水，記得補水、搭配鹽糖水防抽筋</P>
+                </li>
+                <li>
+                  <span class="Brown">垃圾不落地</span>
+                  <P>所有垃圾務必帶下山，衛生紙也屬於垃圾！</P>
+                </li>
+                <li>
+                  <span class="Brown">行前備援</span>
+                  <P>離線地圖、備用電源、緊急聯絡方式要記清楚</P>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <%- include('./layout/go-top'); -%>
+</body>
+<script src="../assets/js/effect.js"></script>
+<script src="../assets/js/slider.js"></script>
+
+</html>
