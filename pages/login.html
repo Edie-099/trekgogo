@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekgogo</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="login-bg">
+            <div class="container-xl pt-11">
+                <div class="row justify-content-center">
+                    <div class="col-6 login-w-662">
+
+                        <!-- 會員登入 -->
+                        <div class="card mb-6">
+                            <div class="card-body p-4 p-lg-7">
+                                <h5 class="card-title fs-3 fs-lg-1 text-center text-neutral-700 fw-bold mb-7">會員登入</h5>
+                                <div class="mb-7">
+                                    <label for="userAccountInput" class="form-label h5 text-neutral-700 mb-3">帳號</label>
+                                    <input type="email" class="form-control login-form-control" id="userAccountInput"
+                                        placeholder="請輸入會員信箱">
+                                </div>
+                                <div class="mb-7">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <label for="userPasswordInput"
+                                            class="form-label h5 text-neutral-700 me-auto">密碼</label>
+                                        <a href="#"><span class="h6 login-form-link">忘記密碼</span></a>
+                                    </div>
+                                    <input type="email" class="form-control login-form-control" id="userPasswordInput"
+                                        placeholder="請輸入會員密碼">
+                                </div>
+
+                                <!-- 登入鍵 -->
+                                <div class="text-center">
+                                    <a href="#" class="btn custom-btn w-100 mb-7">登入</a>
+
+                                    <!-- 分隔線 -->
+                                    <div class="login-divider mb-7">
+                                        <span class="">or</span>
+                                    </div>
+
+                                    <!-- 第三方登入鍵 -->
+                                    <div class="d-flex flex-column">
+                                        <a href="#" class="btn custom-btn-outline login-socialBtn-google mb-4">
+                                            <img src="../assets/images/icons-google.png" alt="google-login">
+                                            以 Google 登入
+                                        </a>
+                                        <a href="#" class="btn custom-btn-outline login-socialBtn-line">
+                                            <img src="../assets/images/icons-line.png" alt="line-login">
+                                            以 LINE 登入
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 加入會員 -->
+                        <div class="mb-7 mb-lg-8">
+                            <p class="text-neutral-700 text-center">還沒有會員帳號嗎?
+                                <a href="#"><span class="login-form-link fw-bolder ms-2">加入會員</span></a>
+                            </p>
+                        </div>
+
+                        <!-- 會員相關問題 -->
+                        <div class="mb-8 mb-lg-10">
+                            <p class="h5 text-neutral-700 mb-4">會員相關問題</p>
+                            <ol class="text-neutral-600">
+                                <li class="mb-4">
+                                    <p>登山搜ㄧ下中各項服務，如：入山申請、課程報名等，需要登入會員後方可使用申請。</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        會員資料依個人資料保護法相關規定保存，詳見
+                                        <a href="#"><span class="login-form-link fw-bolder">「個人資料保護法聲明」</span>。</a>
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="module" src="../main.js">
+
+                // go-top-start
+                var ready = (callback) => {
+                    if (document.readyState != "loading") callback();
+                    else document.addEventListener("DOMContentLoaded", callback);
+                };
+
+                ready((event) => {
+                    const scrollTo = (element, to, duration) => {
+                        if (duration <= 0) {
+                            return;
+                        }
+                        var difference = to - element.scrollTop;
+                        var perTick = (difference / duration) * 10;
+
+                        setTimeout(() => {
+                            element.scrollTop = element.scrollTop + perTick;
+                            if (element.scrollTop === to) {
+                                return;
+                            }
+                            scrollTo(element, to, duration - 10);
+                        }, 10);
+                    };
+
+                    var gotop = document.querySelector(".gotop");
+                    var html = document.documentElement;
+
+                    gotop.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        scrollTo(html, 0, 800);
+                    });
+                });
+                // go-top-end
+
+            </script>
+</body>
+
+</html>
