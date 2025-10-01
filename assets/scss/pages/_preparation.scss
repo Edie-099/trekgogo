@@ -1,4 +1,11 @@
 /* === Hero === */
+// 測試
+// @media (min-width: 768px) {
+//   .col-md-6 {
+//     width: 50% !important;
+//     flex: 0 0 auto;
+//   }
+// }
 
 /* 行前安全準備區塊 */
 .hero {
@@ -12,9 +19,13 @@
   &__bg {
     position: absolute;
     inset: 0;
-    background: url("/assets/images/prepare_PrepareHeroImage.png") center top/
-      cover no-repeat;
-    filter: brightness(0.92);
+    // background: url("/assets/images/prepare_PrepareHeroImage.png") top center /
+    //   auto 100% no-repeat;
+    background: url("/assets/images/prepare_PrepareHeroImage.png") no-repeat
+      center bottom;
+    background-size: cover;
+    background-color: #fff; /* 多出的位置會是白色 */
+    // filter: brightness(0.92);
   }
 
   &__card {
@@ -34,13 +45,15 @@
     // 若想更深：color: $body-color; // = $gray-900
   }
 
-  //   &__form {
-  //     /* 需要額外間距就放這裡 */
-  //   }
+  // &__form {
+
+  // }
 }
 
 /* 調整原生 select 的箭頭顏色（沿用form-select 變數設定） */
 .form-select {
+  display: flex;
+  flex-wrap: wrap;
   background-position: right $form-select-padding-x center;
   background-size: 16px 12px;
   &:focus {
@@ -147,8 +160,8 @@
 }
 
 /* ==== 覆蓋式左右箭頭（用你給的風格） ==== */
-.custom-carousel-control-prev-icon,
-.custom-carousel-control-next-icon {
+.prep-carousel-control-prev-icon,
+.prep-carousel-control-next-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -178,15 +191,15 @@
     width: 32px;
     height: 32px;
     background: currentColor;
-    mask: url("/assets/images/Arrow-l.svg") center / contain no-repeat;
+    mask: url("/assets/images/Arrow-r.svg") center / contain no-repeat;
     -webkit-mask: url("/assets/images/Arrow-r.svg") center / contain no-repeat;
   }
 }
-.custom-carousel-control-prev-icon {
+.prep-carousel-control-prev-icon {
   left: 8px;
   transform: translateY(-50%) scaleX(-1);
 }
-.custom-carousel-control-next-icon {
+.prep-carousel-control-next-icon {
   right: 8px;
   transform: translateY(-50%);
 }
@@ -195,8 +208,8 @@
   .prep__carousel {
     padding-inline: 0;
   }
-  .custom-carousel-control-prev-icon,
-  .custom-carousel-control-next-icon {
+  .prep-carousel-control-prev-icon,
+  .prep-carousel-control-next-icon {
     display: none;
   }
 }
@@ -298,8 +311,13 @@
     color: $neutral-700;
   }
   &__tags {
-    color: $primary-300;
+    color: $primary-200;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__contents {
+    color: $neutral-500;
+    font-weight: 400;
     margin-bottom: 0.5rem;
   }
 }
@@ -352,6 +370,21 @@
   position: relative;
   isolation: isolate; /* 讓 ::before 疊在區塊底層 */
   background: url("/assets/images/BG.png") center/cover no-repeat;
+  /* 上下同時漸淡 */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 16%,
+    #000 84%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 16%,
+    #000 84%,
+    transparent 100%
+  );
 
   /* 區塊背景圖（整段雪山氛圍） */
   //   &::before {
@@ -375,11 +408,47 @@
 
 /* 底部分隔（到 footer 前） */
 .section-divider {
-  &--mountain {
+  &--climbing {
     height: 160px; /* 依設計調整高度 */
     background: url("/assets/images/prepare_FooterDecoration.png") center/cover
       no-repeat;
     margin-top: 48px;
+    /* 上下同時漸淡 */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+  }
+  &--mountain {
+    height: 160px; /* 依設計調整高度 */
+    background: url("/assets/images/prepare_SectionDivider_1.png") center/cover
+      no-repeat;
+    margin-top: 48px;
+    /* 上下同時漸淡 */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #000 16%,
+      #000 84%,
+      transparent 100%
+    );
   }
 }
 
@@ -466,8 +535,13 @@
     color: $neutral-700;
   }
   &__tags {
-    color: $primary-300;
+    color: $primary-200;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__contents {
+    color: $neutral-500;
+    font-weight: 400;
     margin-bottom: 0.5rem;
   }
 }
@@ -477,8 +551,8 @@
   .tools__carousel {
     padding-inline: 0;
   }
-  .custom-carousel-control-prev-icon,
-  .custom-carousel-control-next-icon {
+  .prep-carousel-control-prev-icon,
+  .prep-carousel-control-next-icon {
     display: none;
   }
 }
