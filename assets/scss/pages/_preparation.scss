@@ -311,8 +311,13 @@
     color: $neutral-700;
   }
   &__tags {
-    color: $primary-300;
+    color: $primary-200;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__contents {
+    color: $neutral-500;
+    font-weight: 400;
     margin-bottom: 0.5rem;
   }
 }
@@ -530,8 +535,13 @@
     color: $neutral-700;
   }
   &__tags {
-    color: $primary-300;
+    color: $primary-200;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  &__contents {
+    color: $neutral-500;
+    font-weight: 400;
     margin-bottom: 0.5rem;
   }
 }
