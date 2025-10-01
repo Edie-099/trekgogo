@@ -274,7 +274,7 @@ h1.title-h1 {
 
 
 .track-tabs {
-    width: 100%;
+    // width: 100%;
     margin: 0;
 
 }
@@ -325,11 +325,9 @@ h1.title-h1 {
 .track-cards {
     display: flex;
     transition: transform 0.5s ease;
-    gap: 20px;
+    gap: 12px;
 }
-
  
-
 .track-card {
     flex: 0 0 calc((100% - 40px) / 3);
     /* PC 一次顯示3張 */
@@ -415,7 +413,7 @@ h1.title-h1 {
 
 /* PC: 箭頭卡在第一張卡片邊界線 */
 .track-arrow.left {
-    left: 0%;
+    left: -2%;
     width: 80px;
     height: 80px;
     background: #fff url(../images/Arrow-l.svg) no-repeat center center;
@@ -426,7 +424,7 @@ h1.title-h1 {
 }
 
 .track-arrow.right {
-    right: 0%;
+    right: -2%;
     width: 80px;
     height: 80px;
     background: #fff url(../images/Arrow-r.svg) no-repeat center center;
@@ -437,7 +435,7 @@ h1.title-h1 {
 }
 
 .track-arrow.left:hover {
-    left: 0%;
+    left: -2%;
     width: 80px;
     height: 80px; 
     background: #D5E8D9 url(../images/Arrow-l.svg) no-repeat center center;
@@ -448,7 +446,7 @@ h1.title-h1 {
 }
 
 .track-arrow.right:hover {
-    right: 0%;
+    right: -2%;
     width: 80px;
     height: 80px;
     display: flex;
@@ -541,7 +539,9 @@ h1.title-h1 {
 
 /* 平板 (2 張) */
 @media (max-width: 900px) {
-
+    .track-tabs {
+    width: 100%;
+}
     //  輪播
     .track-slider {
         padding: 0;
@@ -701,14 +701,10 @@ h1.title-h1 {
 
 }
 
-
-
-
-
 /* 手機 (1 張) */
 @media (max-width: 600px) {
     .track-card {
-        flex: 0 0 100%;
+        flex: 0 0 99%;
     }
 
     .track-arrow.right {

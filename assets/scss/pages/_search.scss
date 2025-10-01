@@ -1,0 +1,129 @@
+.se-mt-120{
+    margin-top: 120px;
+}
+
+.se-mapbox {
+  width: 1296px;
+  height: 669px;
+  border-radius: 16px;
+  background-color: aquamarine;
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: left;
+}
+
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.route-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.route-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.route-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-top: 8px;
+  border: 1px solid #2d554a;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #2d554a;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2d554a;
+  color: #fff;
+}
+
+.more {
+  margin-top: 30px;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.se-arrow-L{
+  margin-left: -20px;
+}
+
+.se-width-180{
+  width: 636px;
+  height: 180px;
+}
+
+
+
+.se-h-100{
+  height: 100px;
+}
+

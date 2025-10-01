@@ -1,7 +1,7 @@
 .login-bg {
     max-width: 100%;
     max-height: 100%;
-    background-image: url("../assets/images/Login_HeroImage_m.png");
+    background-image: url("../images/Login_HeroImage_m.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +73,7 @@
 
 @media (min-width: 376px) {
     .login-bg {
-        background-image: url("../assets/images/Login_HeroImage.png");
+        background-image: url("../images/Login_HeroImage.png");
     }
 
     .login-socialBtn-google {

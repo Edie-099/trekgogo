@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索申請區</title>
+    <link rel="stylesheet" href="../static/css/search.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="se-mapbox">
+  <div class="mt-10 mb-10"><img src="/assets/images/search/map-zone.png" alt="#"></div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-10">
+                <h1 class="mb-8  text-center ">熱門登山路線狀態</h1>
+                <div class="d-flex">
+                        <!-- 左側卡片 -->
+                    <div class="col-5  ">
+                <img class="mb-2" src="/assets/images/search/top1-road.png" alt="#">
+<div class="d-flex align-items-center gap-3">
+  <img src="/assets/images/search/Badges1.png" alt="no.1" style="width:50px; height:50px;">
+   <!-- 左邊 -->
+  <div class="justify-content-between flex-grow-1 ">
+    <h2 class="h5 mb-1 ">中央尖山</h2>
+    <p class="h6 text-muted mb-0">台中市和平區 / 花蓮縣秀林鄉</p>
+  </div><h2>177<span class="h6">人成功登頂</span></h2>
+</div>
+
+          </div>                 <!-- 右側列表 -->
+      <div class="col-lg-7">
+        <div class="row fw-bold pb-2 mb-3">
+          <div class="col-4">名稱</div>
+          <div class="col-4">地區</div>
+          <div class="col-4">登山路線狀態</div>
+        </div>
+
+        <!-- 列表項目 -->
+        <div class="row align-items-center py-2 border-bottom">
+          <div class="col-4 d-flex align-items-center gap-2">
+            <span class="badge bg-secondary rounded-circle">2</span>
+            <span>紅淡山</span>
+          </div>
+          <div class="col-4 text-muted small">基隆市仁愛區</div>
+          <div class="col-4 ">145 人成功登頂</div>
+        </div>
+
+        <div class="row align-items-center py-2 border-bottom">
+          <div class="col-4 d-flex align-items-center gap-2">
+            <span class="badge bg-secondary-300 rounded-circle">3</span>
+            <span>塔曼山步道</span>
+          </div>
+          <div class="col-4 text-muted small">桃園市復興區</div>
+          <div class="col-4 ">118 人成功登頂</div>
+        </div>
+
+        <div class="row align-items-center py-2 border-bottom">
+          <div class="col-4">能高越嶺道 - 西段</div>
+          <div class="col-4 text-muted small">南投縣仁愛鄉</div>
+          <div class="col-4 ">96 人成功登頂</div>
+        </div>
+
+        <div class="row align-items-center py-2">
+          <div class="col-4">雪山北峰</div>
+          <div class="col-4 text-muted small">苗栗縣泰安鄉 / 臺中市和平區</div>
+          <div class="col-4">78 人成功登頂</div>
+        </div>
+
+        <!-- 查看更多 -->
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-outline-success rounded-pill">查看更多</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+<div class="container py-5">
+
+  <!-- 山屋與營地資訊 -->
+   
+  <h1 class="text-center mb-4 fw-bold">山屋與營地資訊</h1>
+  <div class="row g-4 justify-content-center mb-10">
+
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+                      <!-- 卡片群 + 覆蓋式箭頭 -->
+            <!-- 左箭頭（可留/可刪） -->
+            <button
+              class="custom-carousel-control-prev-icon "
+              aria-label="上一張"
+            ></button>
+        <img src="/assets/images/search/Card1.png" class="card-img-top" alt="九九山莊">
+        <div class="card-body">
+          <h5 class="card-title">九九山莊</h5>
+          <p class="card-text text-muted">大霸尖山登山步道</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="/assets/images/search/Card2.png" class="card-img-top" alt="天池山莊">
+        <div class="card-body">
+          <h5 class="card-title">天池山莊</h5>
+          <p class="card-text text-muted">雪山東峰登山步道</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="/assets/images/search/Card3.png" class="card-img-top" alt="向陽山屋">
+        <div class="card-body">
+          <h5 class="card-title">向陽山屋</h5>
+          <p class="card-text text-muted">嘉明湖登山步道</p>
+        </div>
+                    <!-- 右箭頭（可留/可刪） -->
+            <button
+              class="custom-carousel-control-next-icon"
+              aria-label="下一張"
+            ></button>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- 初階路線推薦 -->
+<h1 class="text-center mt-5 mb-4 fw-bold">初階路線推薦</h1>
+<div class="row g-4 justify-content-center mb-10 ">
+  <div class="col-md-6 ">
+    <div class="card shadow-sm  d-flex flex-row align-items-center ">
+      <img src="/assets/images/search/sec1.jpg" class="img-fluid" alt="三小時內完成" style="width:40%">
+      <div class="card-body">
+        <h5 class="card-title">三小時內完成</h5>
+        <p class="card-text text-muted">輕鬆半日健行</p>
+       
+      </div>
+      <div class="pe-5">
+<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="col-md-6 ">
+    <div class="card shadow-sm  d-flex flex-row align-items-center">
+      <img src="/assets/images/search/sec2.jpg" class="img-fluid" alt="五小時內完成" style="width:40%; object-fit:cover;">
+      <div class="card-body">
+        <h5 class="card-title">五小時內完成</h5>
+        <p class="card-text text-muted">沈浸山林日間行程</p>
+        
+      </div>
+      <div class="pe-5">
+<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 ">
+    <div class="card shadow-sm  d-flex flex-row align-items-center ">
+      <img src="/assets/images/search/sec3.jpg" class="img-fluid img-container" alt="區域爬坡" style="width:40%; height: 48%; object-fit:cover;">
+      <div class="card-body">
+        <h5 class="card-title">區域爬坡</h5>
+        <p class="card-text text-muted">輕量挑戰</p>
+        
+      </div>
+      <div class="pe-5">
+<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 ">
+    <div class="card shadow-sm  d-flex flex-row align-items-center">
+      <img src="/assets/images/search/sec4.jpg" class="img-fluid " alt="百岳入門必訪" style="width:40%; object-fit:cover;">
+      <div class="card-body">
+        <h5 class="card-title">百岳入門必訪</h5>
+        <p class="card-text text-muted">體驗高山魅力</p>
+        
+      </div>
+      <div class="pe-5">
+<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 查看更多 -->
+<div class="text-center mt-4 mb-10">
+  <a href="#" class="btn btn-success rounded-pill">查看更多路線</a>
+</div>
+
+
+
+  <%- include('./layout/footer'); -%>
+  <%- include('./layout/go-top'); -%>
+
+
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // 初始化地圖
+    const map = L.map('map').setView([23.6978, 120.9605], 7); // 台灣中心點
+
+    // 加入 OpenStreetMap 圖資
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // 放一個 marker（台北）
+    L.marker([25.0330, 121.5654])
+      .addTo(map)
+      .bindPopup("台北 101")
+      .openPopup();
+  </script>
+        <script type="module" src="../main.js">
+
+          // go-top-start
+          var ready = (callback) => {
+            if (document.readyState != "loading") callback();
+            else document.addEventListener("DOMContentLoaded", callback);
+          };
+
+          ready((event) => {
+            const scrollTo = (element, to, duration) => {
+              if (duration <= 0) {
+                return;
+              }
+              var difference = to - element.scrollTop;
+              var perTick = (difference / duration) * 10;
+
+              setTimeout(() => {
+                element.scrollTop = element.scrollTop + perTick;
+                if (element.scrollTop === to) {
+                  return;
+                }
+                scrollTo(element, to, duration - 10);
+              }, 10);
+            };
+
+            var gotop = document.querySelector(".gotop");
+            var html = document.documentElement;
+
+            gotop.addEventListener("click", (e) => {
+              e.preventDefault();
+              scrollTo(html, 0, 800);
+            });
+          });
+          // go-top-end
+
+        </script>
+</body>
+
+</html>
