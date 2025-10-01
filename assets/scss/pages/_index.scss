@@ -1,4 +1,7 @@
-.list-none{list-style-type: none;} 
+.list-none {
+    list-style-type: none;
+}
+
 // section ,div{ border: 1px solid #000;}
 .position {
     position: relative;
@@ -72,11 +75,18 @@ h1.title-h1 {
 .card-search select {
     border-radius: 12px;
     padding: 8px 20px 8px 35px;
-    
+
 }
-.card-search select.mr-12{margin-right: 12px;}
-.card-search select option {margin-left: 50px;}
-.icon-calender{
+
+.card-search select.mr-12 {
+    margin-right: 12px;
+}
+
+.card-search select option {
+    margin-left: 50px;
+}
+
+.icon-calender {
     background: url(../images/icon-Calendar.svg) no-repeat left 10px center;
     background-size: 5%;
     display: inline-block;
@@ -85,7 +95,7 @@ h1.title-h1 {
 .icon-map {
     background: url(../images/icon-map.svg) no-repeat left 10px center;
     background-size: 5%;
- 
+
 }
 
 .Sec1_icon_01 {
@@ -158,7 +168,7 @@ h1.title-h1 {
     color: #fff;
 }
 
- 
+
 // 為你量身打造的登山起點
 .life-box {
     cursor: pointer;
@@ -287,7 +297,7 @@ h1.title-h1 {
 }
 
 .track-tab-list li.track-active {
-    border-bottom:2px solid #2B897A;
+    border-bottom: 2px solid #2B897A;
     font-weight: bold;
     color: #2B897A;
 }
@@ -315,10 +325,11 @@ h1.title-h1 {
 .track-cards {
     display: flex;
     transition: transform 0.5s ease;
-     gap: 20px;
+    gap: 20px;
 }
 
 .track-card :first-child {}
+
 .track-card {
     flex: 0 0 calc((100% - 40px) / 3);
     /* PC 一次顯示3張 */
@@ -405,41 +416,47 @@ h1.title-h1 {
 
 /* PC: 箭頭卡在第一張卡片邊界線 */
 .track-arrow.left {
-    left:10%;
+    left: 0%;
     width: 80px;
     height: 80px;
     background: #fff url(../images/Arrow-l.svg) no-repeat center center;
     background-size: 25%;
     display: flex;
     border: 1px solid #325B53;
+    font-size: 0;  
 }
 
 .track-arrow.right {
-    right: 10%;
+    right: 0%;
     width: 80px;
     height: 80px;
-    // background: #fff url(../images/Arrow-r.svg) no-repeat center center;
+    background: #fff url(../images/Arrow-r.svg) no-repeat center center;
     background-size: 25%;
-    display: flex;
+    display: flex; 
+    font-size: 0;  
 
 }
+
 .track-arrow.left:hover {
-    left: 10%;
+    left: 0%;
     width: 80px;
-    height: 80px;
+    height: 80px; 
     background: #D5E8D9 url(../images/Arrow-l.svg) no-repeat center center;
     background-size: 25%;
     display: flex;
     border: 1px solid #325B53;
+    
 }
 
 .track-arrow.right:hover {
-    right: 10%;
+    right: 0%;
     width: 80px;
     height: 80px;
-    background: #D5E8D9;
-    background-size: 25%;
     display: flex;
+    background: #D5E8D9 url(../images/Arrow-r.svg) no-repeat center center;
+    background-size: 25%;
+    border: 1px solid #325B53;
+     
 
 }
 
@@ -489,42 +506,60 @@ h1.title-h1 {
     height: 24px;
     width: 24px;
 }
+
 .col-4-Sec1,
 .col-4-Sec3 {
     padding: 0 12px;
     width: calc(100% / 12 * 4);
     border-right: 1px solid #DCE0E5;
 }
+
 .col-4-Sec1:last-child,
-.col-4-Sec3:last-child{
-    border-right:none;
+.col-4-Sec3:last-child {
+    border-right: none;
 }
 
 // 共通
-.mb-12{margin-bottom: 12px;}
-.mb-16{margin-bottom: 16px;}
-.mb-32{margin-bottom: 32px;}
-.mb-48{margin-bottom: 48px;}
-.mr-24{margin-right: 24px;}
- 
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
 /* 平板 (2 張) */
 @media (max-width: 900px) {
+
     //  輪播
-    .track-slider{padding: 0;}
-    .track-cards{gap: 0;}
-    .track-card {
-        flex: 0 0 49%;
+    .track-slider {
+        padding: 0;
     }
 
-    .track-arrow.right {
-        left: calc(100% / 2 - 18px);
+    .track-cards {
+        gap: 0;
+    }
+
+    .track-card {
+        flex: 0 0 49%;
     }
 
     // main
     .Sec-content {
         margin: 0 auto;
         padding: 16px;
-
 
     }
 
@@ -539,7 +574,7 @@ h1.title-h1 {
     }
 
     .Sec3-bg {
-        background: url(../images/in_Sec3_m.png) no-repeat center bottom;
+        background: url(../images/in_Sec3.png) no-repeat center bottom;
         background-size: cover;
     }
 
@@ -630,7 +665,7 @@ h1.title-h1 {
         margin: 8px auto;
         max-width: 370px;
         width: 100%;
-        
+
     }
 
     .track-arrow.right,
@@ -639,10 +674,30 @@ h1.title-h1 {
         width: 50px;
 
     }
+
+
     .track-arrow.left {
-        left: -12px;}
+        left: -12px;
+    }
+
     .track-arrow.right {
         left: calc(100% - 40px);
+    }
+
+    .track-arrow.left:hover {
+        left: -12px;
+        width: 50px;
+        height: 50px;
+        background-size: 25%;
+    }
+
+    .track-arrow.right:hover {
+        width: 50px;
+        height: 50px;
+        background-size: 25%;
+        left: calc(100% - 40px);
+
+
     }
 
 }

@@ -56,7 +56,7 @@ ready((event) => {
   var gotop = document.querySelector(".gotop");
   var html = document.documentElement;
 
-  gotop.addEventListener("click", (e) => {
+  gotop?.addEventListener("click", (e) => {
     e.preventDefault();
     scrollTo(html, 0, 800);
   });
