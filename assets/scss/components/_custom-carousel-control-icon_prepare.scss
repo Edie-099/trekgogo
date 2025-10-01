@@ -1,0 +1,64 @@
+/* 讓卡片區能被按鈕覆蓋（避免被裁掉） */
+.prep__carousel {
+  position: relative;
+}
+.prep__track {
+  overflow: visible;
+}
+
+/* 通用外觀（沿用你給的） + 絕對定位覆蓋在卡片上 */
+.custom-carousel-control-prev-icon,
+.custom-carousel-control-next-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: $primary-300;
+  border: 2.5px solid $primary-300;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 1;
+  box-shadow: 0px 8px 24px #2a334233;
+  transition: all 0.1s ease;
+
+  /* SVG 箭頭（吃 currentColor） */
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: currentColor;
+    mask: url("data:image/svg+xml;utf8,\
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+        <path fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M6 12h8m0 0l-3-3m3 3l-3 3'/>\
+      </svg>")
+      center / contain no-repeat;
+  }
+
+  &:hover {
+    background-color: rgba(#d5e8d9, 0.5);
+    opacity: 1;
+  }
+}
+
+/* 左右位置：-40px 會半個按鈕壓在卡片外，可依設計微調 */
+.custom-carousel-control-prev-icon {
+  left: -40px;
+}
+.custom-carousel-control-next-icon {
+  right: -40px;
+}
+
+/* 小尺寸螢幕先隱藏，或縮小 */
+@media (max-width: 991.98px) {
+  .custom-carousel-control-prev-icon,
+  .custom-carousel-control-next-icon {
+    display: none;
+  }
+}
