@@ -114,12 +114,11 @@
     background-color: #fff;
     border-radius: 32px;
     box-shadow: 0 8px 32px 0 rgba(42, 51, 66, 0.16);
-    position: relative; 
-    overflow: hidden;   
+    position: relative;
+    overflow: hidden;
 }
 
-
-// 診斷小工具 
+// 診斷小工具
 .learning-survery-tool {
     padding-top: 16px;
     padding-bottom: 72px;
@@ -138,10 +137,9 @@
     right: 25.76px;
     bottom: -8.72px;
     transform: rotate(19.54deg);
-
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .camera-decorate {
         width: 68.72px;
         height: 49.82px;
@@ -160,7 +158,7 @@
     transform: rotate(19.54deg);
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .picture-decorate {
         width: 48.25px;
         height: 32.56px;
@@ -200,7 +198,7 @@
     }
 
     .learning-btn {
-    min-width: 240px;
+        min-width: 240px;
     }
 }
 
@@ -208,15 +206,14 @@
 .learning-input-btn {
     height: 56px;
     background-color: $white;
-    border-radius: 12px; 
-    border: 2px solid #C7CDD4; 
+    border-radius: 12px;
+    border: 2px solid #c7cdd4;
     padding: 16px;
-    box-shadow: none ;
+    box-shadow: none;
 
-    
     &:focus,
     &:focus-visible {
-        border-color:#2B897A; 
+        border-color: #2b897a;
     }
 }
 
@@ -224,18 +221,18 @@
 .learning-banner {
     background-image: url(/assets/images/svg/banner-bg.svg);
     background-repeat: no-repeat;
-    background-position:  calc(50% - 100px) 90px;
+    background-position: calc(50% - 100px) 90px;
     background-size: cover;
 }
 
 @media (min-width: 556px) {
-    .learning-banner{
+    .learning-banner {
         background-position: center 90px;
     }
 }
 
-@media (min-width:992px) {
-    .learning-banner{
+@media (min-width: 992px) {
+    .learning-banner {
         background-position: center 150px;
     }
 }
@@ -244,14 +241,14 @@
 .line-clamp-2 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; 
+    -webkit-line-clamp: 2;
     overflow: hidden;
 }
 
 .community-selfie {
     width: 48px;
     height: 48px;
-} 
+}
 
 .community-card {
     min-width: 316px;
@@ -266,7 +263,7 @@
 
 @media (min-width: 376px) {
     .community-btn {
-        max-width: 375px; 
+        max-width: 375px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -276,20 +273,21 @@
 @media (min-width: 992px) {
     .community-btn {
         width: 240px;
-        min-width: 240px; 
+        min-width: 240px;
     }
 }
 
 // 箭頭
-.custom-carousel-control-prev-icon{
+
+.learning-community .custom-carousel-control-prev-icon {
     position: absolute;
     bottom: 216px;
     left: -40px;
     transition: all 0.1s ease;
-        transform: scale(1);
+    transform: scale(1);
 }
 
-.custom-carousel-control-next-icon {
+.learning-community .custom-carousel-control-next-icon {
     position: absolute;
     bottom: 216px;
     right: -40px;
@@ -297,21 +295,17 @@
 }
 
 @media (min-width: 993px) and (max-width: 1400px) {
-    .custom-carousel-control-prev-icon {
+    .learning-community .custom-carousel-control-prev-icon {
         left: 0;
     }
-    .custom-carousel-control-next-icon {
+    .learning-community .custom-carousel-control-next-icon {
         right: 0;
     }
 }
 
 @media (max-width: 992px) {
-    .custom-carousel-control-prev-icon,
-    .custom-carousel-control-next-icon {
+    .learning-community .custom-carousel-control-prev-icon,
+    .learning-community .custom-carousel-control-next-icon {
         display: none;
     }
 }
-
-
-
-
