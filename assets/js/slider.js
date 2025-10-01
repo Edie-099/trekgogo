@@ -1,3 +1,5 @@
+console.log('slider.js loaded');
+
 // ========== 輪播功能 ==========
 function initSlider(content) {
   const slider = content.querySelector(".track-slider");
@@ -176,7 +178,7 @@ ready((event) => {
   var gotop = document.querySelector(".gotop");
   var html = document.documentElement;
 
-  gotop.addEventListener("click", (e) => {
+  gotop?.addEventListener("click", (e) => {
     e.preventDefault();
     scrollTo(html, 0, 800);
   });
