@@ -37,12 +37,8 @@ $utilities: map-merge(
 @import "./layout/footer";
 
 
-@import "./pages/index";
-@import "./pages/learning-interactive";
-@import "./pages/login";
-@import "./pages/preparation";
-
-@import "./pages/index";
-@import "./pages/learning-interactive";
-@import "./pages/login";
+@import "pages/index";
+@import "pages/learning-interactive";
+@import "pages/login";
+@import "pages/preparation";
 
