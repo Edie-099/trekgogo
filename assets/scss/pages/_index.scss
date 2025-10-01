@@ -328,7 +328,7 @@ h1.title-h1 {
     gap: 20px;
 }
 
-.track-card :first-child {}
+ 
 
 .track-card {
     flex: 0 0 calc((100% - 40px) / 3);
@@ -391,7 +391,6 @@ h1.title-h1 {
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-
     /* 限制為兩行 */
 }
 
