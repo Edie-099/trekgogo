@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>探索申請區</title>
+        <link rel="icon" href="/trekgogo/assets/favicon-CU5HRXv-.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../static/css/search.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script type="module" crossorigin src="/trekgogo/assets/all-sT2Kk-VC.js"></script>
-  <script type="module" crossorigin src="/trekgogo/assets/main-TE_LLI2u.js"></script>
-  <link rel="stylesheet" crossorigin href="/trekgogo/assets/all-BDPgv6Ke.css">
+  <script type="module" crossorigin src="/trekgogo/assets/all-BTL5e5Sy.js"></script>
+  <script type="module" crossorigin src="/trekgogo/assets/main-O6joF9YO.js"></script>
+  <link rel="stylesheet" crossorigin href="/trekgogo/assets/all-BpS79494.css">
 </head>
 <body>
   <div class="container-xl">
@@ -133,10 +134,10 @@
         </div>
     </nav>
 </div><!-- 有背景漸層的區塊 -->
-<section class="py-5">
+<section class="py-8 section1-bg ">
   <div class="container">
-    <div class="row g-4">
-      
+    <div class="row g-4 mb-8 align-items-center">
+      <div class="col-12 col-md-3 map-wrapper">
       <!-- 左邊：篩選卡片 -->
       <!-- 版本一：6/6 -->
       <!-- <div class="col-12 col-md-6"> -->
@@ -145,13 +146,16 @@
       <!-- <div class="col-12 col-md-4"> -->
 
       <!-- 版本三：3/9 -->
-      <div class="col-12 col-md-3">
-        <div class="filter-card p-4">
-          <h5 class="fw-bold mb-3">前期登山探索</h5>
+      <div class="col-4 col-md-4 col-lg-5">
+        <div class="filter-card position-absolute bottom-3 start-0 m-5 p-4 mt-10 ms-5 shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="h5 fw-bold">前期登山探索<i class="bi bi-chevron-down mx-2"></i></div><i class="bi bi-info-circle mb-4"></i>
+
+          </div>
 
           <!-- 區域 -->
-          <div class="mb-3">
-            <p class="fw-bold mb-2">區域</p>
+          <div class="mb-3 border-bottom pb-6">
+            <p class="fw-bold mb-2 text-start">區域</p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-sm btn-outline-success active">北部</button>
               <button class="btn btn-sm btn-outline-success">中部</button>
@@ -161,8 +165,8 @@
           </div>
 
           <!-- 天數 -->
-          <div class="mb-3">
-            <p class="fw-bold mb-2">天數</p>
+          <div class="mb-3 border-bottom pb-6">
+            <p class="fw-bold mb-2 text-start">天數</p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-sm btn-outline-success active">五小時以下</button>
               <button class="btn btn-sm btn-outline-success">一天</button>
@@ -172,8 +176,8 @@
           </div>
 
           <!-- 體能 -->
-          <div class="mb-3">
-            <p class="fw-bold mb-2">體能</p>
+          <div class="mb-8">
+            <p class="fw-bold mb-2 text-start">體能</p>
             <div class="d-flex flex-wrap gap-2">
               <button class="btn btn-sm btn-outline-success active">入門</button>
               <button class="btn btn-sm btn-outline-success">初級</button>
@@ -184,8 +188,8 @@
 
           <!-- 按鈕 -->
           <div class="d-flex gap-2">
-            <button class="btn btn-success flex-fill">我要申請隊長</button>
-            <button class="btn btn-outline-success flex-fill">我要申請成員</button>
+            <button class="btn flex-fill custom-btn text-white px-5 w-100 py-4 rounded-5">我要申請隊長</button>
+            <button class="btn custom-btn-outline px-5 w-100 py-4 rounded-5">我要申請成員</button>
           </div>
         </div>
       </div>
@@ -198,9 +202,10 @@
       <!-- <div class="col-12 col-md-8"> -->
 
       <!-- 版本三：9 -->
-      <div class="col-12 col-md-9">
-        <div class="map-container">
-          <img src="/assets/images/search/taiwan-map.png" class="img-fluid w-100 rounded" alt="台灣地圖">
+      <!-- 右側 col (地圖) -->
+      <div class="col-12 col-md-8 col-lg-7 ">
+        <div class="map-container position-relative">
+          <img src="/trekgogo/assets/Map-B3-bPP7K.png" class="img-fluid " alt="台灣地圖">
         </div>
       </div>
 
@@ -210,11 +215,11 @@
 
 
 
-<section>
+<section class="section2-bg">
     <div class="container">
         <div class="row">
             <div class="col-12 mb-10">
-                <h1 class="mb-8  text-center ">熱門登山路線狀態</h1>
+                <h1 class="mb-7 mt-8 text-center ">熱門登山路線狀態</h1>
                 <div class="d-flex">
                         <!-- 左側卡片 -->
                     <div class="col-5  ">
@@ -276,110 +281,136 @@
   </div>
     </section>
 
-<div class="container py-5">
+    <div class="section3-bg">
+    <!-- 山屋與營地資訊 -->
+      <div class="container py-5 ">
+      
+        <!-- 山屋與營地資訊 -->
+         
+        <h1 class="text-center mb-4 ">山屋與營地資訊</h1>
+        <div class="row g-4 justify-content-center mb-10 ">
+      
 
-  <!-- 山屋與營地資訊 -->
-   
-  <h1 class="text-center mb-4 fw-bold">山屋與營地資訊</h1>
-  <div class="row g-4 justify-content-center mb-10">
 
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="/trekgogo/assets/Card1-G0hD1VfT.png" class="card-img-top" alt="九九山莊">
-        <div class="card-body">
-          <h5 class="card-title">九九山莊</h5>
-          <p class="card-text text-muted">大霸尖山登山步道</p>
-        </div>
+  <!-- 橫向滑動的容器 -->
+  <div class="scroll-wrapper">
+    <div class="scroll-cards d-flex flex-nowrap gap-4">
+      
+      <div class="card-sec3 text-white shadow-sm position-relative">            
+        
+
+
+        <img src="/trekgogo/assets/Card1-G0hD1VfT.png" class="card-img" alt="九九山莊">
+              <div class="card-img-overlay d-flex flex-column justify-content-start p-0">
+                <div class="position-absolute bottom-0 start-0 p-4">
+
+                  <h5 class="card-title me-9 mb-5">九九山莊</h5>
+                  <p class="h6"><i class="bi bi-geo-alt mx-1"></i>大霸尖山登山步道</p>
+                </div>
+              </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="/trekgogo/assets/Card2-BLArABsk.png" class="card-img-top" alt="天池山莊">
-        <div class="card-body">
-          <h5 class="card-title">天池山莊</h5>
-          <p class="card-text text-muted">雪山東峰登山步道</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="/trekgogo/assets/Card3-BHyG_6aX.png" class="card-img-top" alt="向陽山屋">
-        <div class="card-body">
-          <h5 class="card-title">向陽山屋</h5>
-          <p class="card-text text-muted">嘉明湖登山步道</p>
-        </div>
+            <div class="card-sec3 text-white shadow-sm position-relative">
+        <img src="/trekgogo/assets/Card2-BLArABsk.png" class="card-img" alt="九九山莊">
+              <div class="card-img-overlay d-flex flex-column justify-content-start p-0">
+                <div class="position-absolute bottom-0 start-0 p-4">
 
+                  <h5 class="card-title me-9 mb-5">天池山莊</h5>
+                  <p class="h6"><i class="bi bi-geo-alt mx-1"></i>能高越嶺國家步道</p>
+                </div>
+              </div>
       </div>
+            <div class="card-sec3 text-white shadow-sm position-relative">
+        <img src="/trekgogo/assets/Card3-BHyG_6aX.png" class="card-img" alt="九九山莊">
+              <div class="card-img-overlay d-flex flex-column justify-content-start p-0">
+                <div class="position-absolute bottom-0 start-0 p-4">
 
+                  <h5 class="card-title me-9 mb-5">向陽山屋</h5>
+                  <p class="h6"><i class="bi bi-geo-alt mx-1"></i>大霸尖山登山步道</p>
+                </div>
+              </div>
+      </div>
+</div>
+
+
+</div>
+
+
+</div>
+          </div>
+        </div>
     </div>
-    
-  </div>
 
   <!-- 初階路線推薦 -->
-<h1 class="text-center mt-5 mb-4 fw-bold">初階路線推薦</h1>
-<div class="row g-4 justify-content-center mb-10 ">
-  <div class="col-md-6 ">
-    <div class="card shadow-sm  d-flex flex-row align-items-center ">
-      <img src="/trekgogo/assets/sec1-DEfgifH2.jpg" class="img-fluid" alt="三小時內完成" style="width:40%">
-      <div class="card-body">
-        <h5 class="card-title">三小時內完成</h5>
-        <p class="card-text text-muted">輕鬆半日健行</p>
-       
-      </div>
-      <div class="pe-5">
-<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
-      </div>
-      
-    </div>
-  </div>
+<h1 class="text-center mt-10 mb-4 ">初階路線推薦</h1>
+  <div class="section4-bg">
+<div class="container ">
 
-  <div class="col-md-6 ">
-    <div class="card shadow-sm  d-flex flex-row align-items-center">
-      <img src="/trekgogo/assets/sec2-o8MIKIZm.jpg" class="img-fluid" alt="五小時內完成" style="width:40%; object-fit:cover;">
-      <div class="card-body">
-        <h5 class="card-title">五小時內完成</h5>
-        <p class="card-text text-muted">沈浸山林日間行程</p>
-        
+    <div class="row g-4 justify-content-center mb-10 ">
+      <div class="col-md-6 ">
+        <div class="card shadow-sm  d-flex flex-row align-items-center ">
+          <img src="/trekgogo/assets/sec1-DEfgifH2.jpg" class="img-fluid" alt="三小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">三小時內完成</h5>
+            <p class="card-text text-muted">輕鬆半日健行</p>
+           
+          </div>
+          <div class="pe-5">
+    <a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+          </div>
+          
+        </div>
       </div>
-      <div class="pe-5">
-<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+    
+      <div class="col-md-6 ">
+        <div class="card shadow-sm  d-flex flex-row align-items-center">
+          <img src="/trekgogo/assets/sec2-o8MIKIZm.jpg" class="img-fluid" alt="五小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">五小時內完成</h5>
+            <p class="card-text text-muted">沈浸山林半日旅程</p>
+            
+          </div>
+          <div class="pe-5">
+    <a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+          </div>
+        </div>
       </div>
+    
+      <div class="col-md-6 ">
+        <div class="card shadow-sm  d-flex flex-row align-items-center ">
+          <img src="/trekgogo/assets/sec3-Cpvzfa7M.jpg" class="img-fluid img-container" alt="區域爬坡" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">區域精選</h5>
+            <p class="card-text text-muted">探索山景獨特風貌</p>
+            
+          </div>
+          <div class="pe-5">
+    <a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6 ">
+        <div class="card shadow-sm  d-flex flex-row align-items-center">
+          <img src="/trekgogo/assets/sec4-iFZzpXkd.jpg" class="img-fluid " alt="百岳入門必訪" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">百岳入門必訪</h5>
+            <p class="card-text text-muted">體驗百岳的魅力</p>
+            
+          </div>
+          <div class="pe-5">
+    <a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
+          </div>
+        </div>
+      </div>
+      <!-- 查看更多 -->
+    <div class="text-center mt-5 mb-10">
+      <a href="#" class="btn btn-outline-success rounded-pill ">查看更多路線</a>
     </div>
-  </div>
+    </div>
 
-  <div class="col-md-6 ">
-    <div class="card shadow-sm  d-flex flex-row align-items-center ">
-      <img src="/trekgogo/assets/sec3-Cpvzfa7M.jpg" class="img-fluid img-container" alt="區域爬坡" style="width:40%; height: 48%; object-fit:cover;">
-      <div class="card-body">
-        <h5 class="card-title">區域爬坡</h5>
-        <p class="card-text text-muted">輕量挑戰</p>
-        
-      </div>
-      <div class="pe-5">
-<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-6 ">
-    <div class="card shadow-sm  d-flex flex-row align-items-center">
-      <img src="/trekgogo/assets/sec4-iFZzpXkd.jpg" class="img-fluid " alt="百岳入門必訪" style="width:40%; object-fit:cover;">
-      <div class="card-body">
-        <h5 class="card-title">百岳入門必訪</h5>
-        <p class="card-text text-muted">體驗高山魅力</p>
-        
-      </div>
-      <div class="pe-5">
-<a href="#" class="btn btn-outline-success rounded-pill btn-sm ">查看更多</a>
-      </div>
-    </div>
   </div>
 </div>
 
-<!-- 查看更多 -->
-<div class="text-center mt-4 mb-10">
-  <a href="#" class="btn btn-success rounded-pill">查看更多路線</a>
-</div>
 
 
 
@@ -572,6 +603,8 @@
   </script>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
