@@ -1,0 +1,46 @@
+          <div class="container d-flex justify-content-center">
+<div class="section-bg"></div>
+      <!-- 篩選浮動卡片 -->
+      <div class="filter-card position-absolute top-0 start-0 m-5 p-5 bg-white shadow rounded">
+        <h5 class="fw-bold mb-3">前期登山探索</h5>
+
+        <!-- 區域 -->
+        <div class="mb-3">
+          <p class="fw-bold mb-2">區域</p>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-sm btn-outline-success active">北部</button>
+            <button class="btn btn-sm btn-outline-success">中部</button>
+            <button class="btn btn-sm btn-outline-success">南部</button>
+            <button class="btn btn-sm btn-outline-success">東部</button>
+          </div>
+        </div>
+
+        <!-- 天數 -->
+        <div class="mb-3">
+          <p class="fw-bold mb-2">天數</p>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-sm btn-outline-success active">五小時以下</button>
+            <button class="btn btn-sm btn-outline-success">一天</button>
+            <button class="btn btn-sm btn-outline-success">兩天</button>
+            <button class="btn btn-sm btn-outline-success">兩天以上</button>
+          </div>
+        </div>
+
+        <!-- 體能 -->
+        <div class="mb-4">
+          <p class="fw-bold mb-2">體能</p>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-sm btn-outline-success active">入門</button>
+            <button class="btn btn-sm btn-outline-success">初級</button>
+            <button class="btn btn-sm btn-outline-success">中級</button>
+            <button class="btn btn-sm btn-outline-success">高級</button>
+          </div>
+        </div>
+
+        <!-- 按鈕 -->
+        <div class="d-flex gap-3">
+          <button class="btn btn-success flex-fill">我要申請隊長</button>
+          <button class="btn btn-outline-success flex-fill">我要申請成員</button>
+        </div>
+      </div>
+    </div>

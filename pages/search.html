@@ -6,16 +6,86 @@
     <title>探索申請區</title>
     <link rel="stylesheet" href="../static/css/search.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body>
   <%- include('./layout/header'); -%>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 ">
-                <div class="se-mapbox">
-  <div class="mt-10 mb-10"><img src="/assets/images/search/map-zone.png" alt="#"></div>
+<!-- 有背景漸層的區塊 -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 左邊：篩選卡片 -->
+      <!-- 版本一：6/6 -->
+      <!-- <div class="col-12 col-md-6"> -->
+
+      <!-- 版本二：4/8 -->
+      <!-- <div class="col-12 col-md-4"> -->
+
+      <!-- 版本三：3/9 -->
+      <div class="col-12 col-md-3">
+        <div class="filter-card p-4">
+          <h5 class="fw-bold mb-3">前期登山探索</h5>
+
+          <!-- 區域 -->
+          <div class="mb-3">
+            <p class="fw-bold mb-2">區域</p>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-outline-success active">北部</button>
+              <button class="btn btn-sm btn-outline-success">中部</button>
+              <button class="btn btn-sm btn-outline-success">南部</button>
+              <button class="btn btn-sm btn-outline-success">東部</button>
+            </div>
+          </div>
+
+          <!-- 天數 -->
+          <div class="mb-3">
+            <p class="fw-bold mb-2">天數</p>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-outline-success active">五小時以下</button>
+              <button class="btn btn-sm btn-outline-success">一天</button>
+              <button class="btn btn-sm btn-outline-success">兩天</button>
+              <button class="btn btn-sm btn-outline-success">兩天以上</button>
+            </div>
+          </div>
+
+          <!-- 體能 -->
+          <div class="mb-3">
+            <p class="fw-bold mb-2">體能</p>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-sm btn-outline-success active">入門</button>
+              <button class="btn btn-sm btn-outline-success">初級</button>
+              <button class="btn btn-sm btn-outline-success">中級</button>
+              <button class="btn btn-sm btn-outline-success">高級</button>
+            </div>
+          </div>
+
+          <!-- 按鈕 -->
+          <div class="d-flex gap-2">
+            <button class="btn btn-success flex-fill">我要申請隊長</button>
+            <button class="btn btn-outline-success flex-fill">我要申請成員</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右邊：地圖 -->
+      <!-- 版本一：6/6 -->
+      <!-- <div class="col-12 col-md-6"> -->
+
+      <!-- 版本二：8 -->
+      <!-- <div class="col-12 col-md-8"> -->
+
+      <!-- 版本三：9 -->
+      <div class="col-12 col-md-9">
+        <div class="map-container">
+          <img src="/assets/images/search/taiwan-map.png" class="img-fluid w-100 rounded" alt="台灣地圖">
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
+
 
 
 <section>
@@ -93,12 +163,6 @@
 
     <div class="col-md-4">
       <div class="card h-100 shadow-sm">
-                      <!-- 卡片群 + 覆蓋式箭頭 -->
-            <!-- 左箭頭（可留/可刪） -->
-            <button
-              class="custom-carousel-control-prev-icon "
-              aria-label="上一張"
-            ></button>
         <img src="/assets/images/search/Card1.png" class="card-img-top" alt="九九山莊">
         <div class="card-body">
           <h5 class="card-title">九九山莊</h5>
@@ -122,12 +186,9 @@
           <h5 class="card-title">向陽山屋</h5>
           <p class="card-text text-muted">嘉明湖登山步道</p>
         </div>
-                    <!-- 右箭頭（可留/可刪） -->
-            <button
-              class="custom-carousel-control-next-icon"
-              aria-label="下一張"
-            ></button>
+
       </div>
+
     </div>
     
   </div>
@@ -258,6 +319,8 @@
           // go-top-end
 
         </script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </body>
 
 </html>
