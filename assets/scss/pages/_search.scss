@@ -37,12 +37,12 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 555px;
   object-fit: cover;
 }
 
@@ -110,14 +110,23 @@ h2 {
   height: 200px;
 }
 
+
+.card-sec3 img {
+  object-fit: cover;
+  height: 555px;
+  border-radius: 16px;
+}
+
+.card-sec3 {
+  overflow: hidden;
+  flex: 0 0 auto; /* 保持固定寬度，不會被壓縮 */
+}
+
 .se-arrow-L {
   margin-left: -20px;
 }
 
-.se-width-180 {
-  width: 636px;
-  height: 180px;
-}
+
 
 .se-h-100 {
   height: 100px;
@@ -159,24 +168,22 @@ h2 {
   }
 }
 
-.map-wrapper {
-  width: 100%;
-  max-width: 1296px;
-  height: 669px;
-  border-radius: 16px;
-  overflow: hidden;
-  position: relative;
-  background: #a0d9f7; /* 底色避免地圖還沒載入時出現白底 */
-  margin: 20px auto; /* 置中用，可以拿掉 */
-}
 
 
 /* 外層背景漸層 */
-.section-bg {
+.section1-bg {
   background: linear-gradient(to bottom, #FFFFFF 0%, #DCE0E5 100%);
   padding: 120px 0;
-  height: 1920px;
-  width: 1080px;
+  
+
+}
+
+
+.section3-bg {
+  background: #ECF3ED;
+  padding: 120px 0;
+  
+
 }
 
 /* 地圖方塊 */
@@ -205,24 +212,50 @@ h2 {
   color: white;
 }
 
-// 地圖容器
-.map-container {
-  min-height: 500px;
-  background: #f9fafb;
-  border-radius: 16px;
-  overflow: hidden;
 
-  img {
-    object-fit: cover;
-  }
+.section2-bg {
+  background-image: url('/assets/images/search/Section2.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 60px 20px;
+
+
 }
+
+
+
+.section3-bg {
+  background-color: var(#ECF3ED); /* 淺灰色背景 */
+  background-image: url('/assets/images/search/img_route_m.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 60px 20px;
+  text-align: center;
+  color: #1B2028;
+}
+
+.section4-bg {
+
+  background-image: url('/assets/images/search/Section4.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 60px 20px;
+  text-align: center;
+
+}
+
+
 
 // 篩選卡片
 .filter-card {
-  background-color: #e6f4f9; // 淺藍
+  background-color: #FFFFFF; // 淺藍
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #1B2028;
 
   h5 {
     font-weight: 700;
@@ -239,8 +272,8 @@ h2 {
     padding: 0.35rem 0.9rem;
 
     &.active {
-      background-color: #198754;
-      color: #fff;
+      background-color: rgba(25, 135, 84, 0.05);
+      color: #325B53;
     }
   }
 
@@ -251,7 +284,7 @@ h2 {
   }
 
   .btn-success {
-    background-color: #198754;
+    background-color: darken(#198754, 5%);
     border-color: #198754;
 
     &:hover {
@@ -262,6 +295,88 @@ h2 {
   .btn-outline-success {
     &:hover {
       background-color: rgba(25, 135, 84, 0.1);
+      color: #325B53;
     }
   }
 }
+
+
+.scroll-cards {
+  overflow-x: auto;     /* 水平可滑 */
+  -webkit-overflow-scrolling: touch; /* iOS 慣性滑動 */
+  scrollbar-width: none; /* Firefox 隱藏捲軸 */
+}
+.scroll-cards::-webkit-scrollbar {
+  display: none; /* Chrome/Safari 隱藏捲軸 */
+}
+
+
+
+
+.se-carousel-control-prev-icon,
+.se-carousel-control-next-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: $primary-300;
+  border: 2.5px solid $primary-300;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 1;
+  box-shadow: 0px 8px 24px #2a334233;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background-color: rgba(#d5e8d9, 0.5);
+  }
+
+  /* 箭頭圖樣（吃 color），把路徑換成你的檔案 */
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: currentColor;
+    mask: url("/assets/images/Arrow-r.svg") center / contain no-repeat;
+    -webkit-mask: url("/assets/images/Arrow-r.svg") center / contain no-repeat;
+  }
+}
+.se-carousel-control-prev-icon {
+  left: 8px;
+  transform: translateY(-50%) translateX(-60%) scaleX(-1);
+}
+.se-carousel-control-next-icon {
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  .se-carousel {
+    padding-inline: 0;
+  }
+  .se-carousel-control-prev-icon,
+  .se-carousel-control-next-icon {
+    display: none;
+  }
+}
+
+
+/* 手機窄版：隱藏覆蓋箭頭、縮小左右留白 */
+@media (max-width: 991.98px) {
+  .tools__carousel {
+    padding-inline: 0;
+  }
+  .se-carousel-control-prev-icon,
+  .se-carousel-control-next-icon {
+    display: none;
+  }
+}
+
+
