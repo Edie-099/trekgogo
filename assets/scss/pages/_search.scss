@@ -83,13 +83,51 @@
   display: inline-block;
   padding: 6px 14px;
   margin-top: 8px;
+  border: 2px solid #325B53;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #325B53;
+  font-size: 14px;
+  transition: 0.2s;
+  background-color: #FFFFFF;
+
+}
+
+
+.se-btn-brand {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-top: 8px;
+  border: 1px solid #325B53;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #325B53;
+  font-size: 14px;
+  transition: 0.2s;
+  background-color: #FFFFFF;
+
+}
+
+.se-btn-green {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-top: 8px;
   border: 1px solid #2d554a;
   border-radius: 20px;
   text-decoration: none;
   color: #2d554a;
   font-size: 14px;
   transition: 0.2s;
+  background-color: #325B53;
 }
+
+
+.se-btn-green:hover {
+  background: #2B897A;
+  color: #fff;
+}
+
+
 
 .se-btn:hover {
   background: #2d554a;
@@ -242,7 +280,7 @@ h2 {
   background-size: fill;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 60px 20px;
+  padding: 10px 20px;
   text-align: center;
 
 }
@@ -271,8 +309,9 @@ h2 {
     font-size: 0.85rem;
     padding: 0.35rem 0.9rem;
 
+
     &.active {
-      background-color: rgba(25, 135, 84, 0.05);
+      background-color: #ECF3ED;
       color: #325B53;
     }
   }
@@ -281,11 +320,14 @@ h2 {
   .se-btn-outline-success {
     border-radius: 8px;
     font-weight: 600;
+
+
   }
 
   .se-btn-success {
     background-color: darken(#198754, 5%);
-    border-color: #198754;
+    border-color: #325B53;
+    border: 2px solid #325B53;
 
     &:hover {
       background-color: darken(#198754, 5%);
@@ -296,6 +338,8 @@ h2 {
     &:hover {
       background-color: rgba(25, 135, 84, 0.1);
       color: #325B53;
+          border: 1px solid #325B53;
+
     }
   }
 }
@@ -380,3 +424,94 @@ h2 {
 }
 
 
+.se-hilight {
+  color: #B08E5F;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+
+.se-hilight-sm {
+  color: #B08E5F;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.se-bg-secondary {
+  background-color: #BA6F49;
+}
+
+
+
+/* 手機窄版：隱藏切換MB版登山狀態 */
+@media (max-width: 991.98px) {
+  .tools__carousel {
+    padding-inline: 0;
+  }
+  .se-mb-tbody {
+    display: none;
+  }     
+
+    .se-mb-tbody-title {
+      display: none;
+    }
+    .card-title{
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .section4-bg {
+
+  background-image: url('/assets/images/search/Section4.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 0px 0px;
+  padding-bottom: 120px;
+  text-align: center;
+
+}
+
+    //     .se-btn-sm{
+    //   font-size: 12px;
+    //   padding: 1px 1px;
+    // }
+  }
+
+
+@media (min-width: 991.98px) {
+      .se-pc-tbody {
+      display: none;
+    }
+
+}
+
+
+/* 手機窄版：隱藏切換MB版登山狀態 */
+@media (max-width: 375px) {
+
+    .section4-bg {
+
+  background-image: url('/assets/images/search/Section4-sm.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 0px 0px;
+  padding-bottom: 120px;
+  text-align: center;
+
+}
+    .section2-bg {
+
+  background-image: url('/assets/images/search/Section2-sm.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 0px 0px;
+  padding-bottom: 120px;
+  text-align: center;
+
+}
+
+
+}

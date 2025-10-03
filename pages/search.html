@@ -35,10 +35,10 @@
           <div class="mb-3 border-bottom pb-6">
             <p class="fw-bold mb-2 text-start">區域</p>
             <div class="d-flex flex-wrap gap-2">
-              <button class="se-btn se-btn-sm se-btn-outline-success active">北部</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">中部</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">南部</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">東部</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success active">北部</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">中部</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">南部</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">東部</button>
             </div>
           </div>
 
@@ -46,10 +46,10 @@
           <div class="mb-3 border-bottom pb-6">
             <p class="fw-bold mb-2 text-start">天數</p>
             <div class="d-flex flex-wrap gap-2">
-              <button class="se-btn se-btn-sm se-btn-outline-success active">五小時以下</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">一天</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">兩天</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">兩天以上</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success active">五小時以下</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">一天</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">兩天</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">兩天以上</button>
             </div>
           </div>
 
@@ -57,17 +57,17 @@
           <div class="mb-8">
             <p class="fw-bold mb-2 text-start">體能</p>
             <div class="d-flex flex-wrap gap-2">
-              <button class="se-btn se-btn-sm se-btn-outline-success active">入門</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">初級</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">中級</button>
-              <button class="se-btn se-btn-sm se-btn-outline-success">高級</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success active">入門</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">初級</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">中級</button>
+              <button class="se-btn-brand se-btn-sm se-btn-outline-success">高級</button>
             </div>
           </div>
 
           <!-- 按鈕 -->
           <div class="d-flex gap-2">
-            <button class="se-btn flex-fill custom-btn text-white px-5 w-100 py-4 rounded-5">我要申請隊長</button>
-            <button class="se-btn custom-btn-outline px-5 w-100 py-4 rounded-5">我要申請成員</button>
+            <button class="se-btn-green flex-fill text-white px-5 w-100 py-4 rounded-5 ">我要申請隊長</button>
+            <button class="se-btn flex-fill px-5 w-100 py-4 rounded-5 fw-bold">我要申請成員</button>
           </div>
         </div>
       </div>
@@ -96,65 +96,152 @@
 <section class="section2-bg">
     <div class="container">
         <div class="row">
-            <div class="col-12 mb-10">
+            <div class="col-12 col-md-12 mb-10">
                 <h1 class="mb-7 mt-8 text-center ">熱門登山路線狀態</h1>
-                <div class="d-flex">
-                        <!-- 左側卡片 -->
-                    <div class="col-5  ">
+                <div class="d-flex se-mb-tbody justify-content-center gap-3 ">
+                        <!-- pc左側卡片 -->
+                    <div class="col-5 se-mb-tbody">
                 <img class="mb-2" src="/assets/images/search/top1-road.png" alt="#">
-<div class="d-flex align-items-center gap-3">
+<div class="d-flex align-items-center gap-3 ">
   <img src="/assets/images/search/Badges1.png" alt="no.1" style="width:50px; height:50px;">
    <!-- 左邊 -->
-  <div class="justify-content-between flex-grow-1 ">
-    <h2 class="h5 mb-1 ">中央尖山</h2>
+  <div class="justify-content-between flex-grow-1 mt-2 ">
+    <h2 class="h5 mb-1 fw-bold">中央尖山</h2>
     <p class="h6 text-muted mb-0">台中市和平區 / 花蓮縣秀林鄉</p>
-  </div><h2>177<span class="h6">人成功登頂</span></h2>
+  </div><p><span class="se-hilight">177</span>人成功登頂</p>
 </div>
 
-          </div>                 <!-- 右側列表 -->
-      <div class="col-lg-7">
-        <div class="row fw-bold pb-2 mb-3">
+          </div>                 <!-- pc右側列表 -->
+      <div class="col-7 se-mb-tbody">
+        <div class="row pb-2 mb-3">
           <div class="col-4">名稱</div>
           <div class="col-4">地區</div>
           <div class="col-4">登山路線狀態</div>
         </div>
 
         <!-- 列表項目 -->
-        <div class="row align-items-center py-2 border-bottom">
+        <div class="row align-items-center py-5 border-bottom">
           <div class="col-4 d-flex align-items-center gap-2">
             <span class="badge bg-secondary rounded-circle">2</span>
-            <span>紅淡山</span>
+            <span class="fw-bold">紅淡山</span>
           </div>
           <div class="col-4 text-muted small">基隆市仁愛區</div>
-          <div class="col-4 ">145 人成功登頂</div>
+          <div class="col-4 "><p><span class="se-hilight-sm">145</span> 人成功登頂</p></div>
         </div>
 
-        <div class="row align-items-center py-2 border-bottom">
+        <div class="row align-items-center py-5 border-bottom">
           <div class="col-4 d-flex align-items-center gap-2">
-            <span class="badge bg-secondary-300 rounded-circle">3</span>
-            <span>塔曼山步道</span>
+            <span class="badge se-bg-secondary rounded-circle">3</span>
+            <span class="fw-bold">塔曼山步道</span>
           </div>
           <div class="col-4 text-muted small">桃園市復興區</div>
-          <div class="col-4 ">118 人成功登頂</div>
+          <div class="col-4 "><p><span class="se-hilight-sm">118</span> 人成功登頂</p></div>
         </div>
 
-        <div class="row align-items-center py-2 border-bottom">
-          <div class="col-4">能高越嶺道 - 西段</div>
+        <div class="row align-items-center py-5 border-bottom">
+          <div class="col-4 fw-bold">能高越嶺道 - 西段</div>
           <div class="col-4 text-muted small">南投縣仁愛鄉</div>
-          <div class="col-4 ">96 人成功登頂</div>
+          <div class="col-4 "><p><span class="se-hilight-sm">96</span> 人成功登頂</p></div>
         </div>
 
-        <div class="row align-items-center py-2">
-          <div class="col-4">雪山北峰</div>
+        <div class="row align-items-center py-5 mb-2">
+          <div class="col-4 fw-bold">雪山北峰</div>
           <div class="col-4 text-muted small">苗栗縣泰安鄉 / 臺中市和平區</div>
-          <div class="col-4">78 人成功登頂</div>
+          <div class="col-4"><p><span class="se-hilight-sm">78</span> 人成功登頂</p></div>
         </div>
 
         <!-- 查看更多 -->
         <div class="text-center mt-4">
-          <a href="#" class="se-btn se-btn-outline-success rounded-pill">查看更多</a>
+          <a href="#" class="se-btn se-btn-outline-success rounded-pill py-5 px-9 fw-bold">查看更多</a>
         </div>
       </div>
+
+
+
+<section class="py-5 se-pc-tbody">
+  <div class="container2">
+  
+
+    <!-- 主圖 -->
+    <div class="mb-3">
+      <img src="/assets/images/search/top1-road.png" class="img-fluid rounded" alt="中央尖山">
+    </div>
+
+    <!-- 路線列表 -->
+    <div class="rounded">
+      
+      <!-- 1 -->
+      <div class="list-group-item d-flex align-items-center py-5 border-bottom">
+        <img src="/assets/images/search/Badges1.png" alt="no.1" style="width:28px; height:28px;" class="me-2">
+        <div class="flex-grow-1 ">
+          <h6 class="mb-0 fw-bold">中央尖山</h6>
+          <small class="text-muted">台中市和平區 / 花蓮縣秀林鄉</small>
+        </div>
+        <div class="text-end fw-bold">
+          <p class="small text-muted"><span class="se-hilight-sm">177</span> 人成功登頂</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="list-group-item d-flex align-items-center py-5 border-bottom">
+        <img src="/assets/images/search/Badges2.png" alt="no.2" style="width:28px; height:28px;" class="me-2">
+        <div class="flex-grow-1 ">
+          <h6 class="mb-0 fw-bold">紅淡山</h6>
+          <small class="text-muted">基隆市仁愛區</small>
+        </div>
+        <div class="text-end text-success fw-bold">
+          <p class="small text-muted"><span class="se-hilight-sm">145</span> 人成功登頂</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="list-group-item d-flex align-items-center py-5 border-bottom">
+        <img src="/assets/images/search/Badges3.png" alt="no.3" style="width:28px; height:28px;" class="me-2">
+        <div class="flex-grow-1">
+          <h6 class="mb-0 fw-bold">塔曼山步道</h6>
+          <small class="text-muted">桃園市復興區</small>
+        </div>
+        <div class="text-end text-success fw-bold">
+          <p class="small text-muted"><span class="se-hilight-sm">118</span> 人成功登頂</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="list-group-item d-flex align-items-center py-5 border-bottom">
+
+        <div class="flex-grow-1">
+          <h6 class="mb-0 fw-bold">能高越嶺道 - 西段</h6>
+          <small class="text-muted">基隆市仁愛區</small>
+        </div>
+        <div class="text-end text-success fw-bold">
+          <p class="small text-muted"><span class="se-hilight-sm">96</span> 人成功登頂</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="list-group-item d-flex align-items-center py-5 ">
+      
+        <div class="flex-grow-1">
+          <h6 class="mb-0 fw-bold">雪山北峰</h6>
+          <small class="text-muted">苗栗縣泰安鄉 / 臺中市和平區</small>
+        </div>
+        <div class="text-end text-success fw-bold">
+          <p class="small text-muted"><span class="se-hilight-sm">78</span> 人成功登頂</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 查看更多 -->
+    <div class="text-center mt-4 col-mb-12">
+      <a href="#" class="se-btn se-btn-outline-success rounded-pill px-10 py-5 fw-bold">查看更多</a>
+    </div>
+  </div>
+</section>
+
+<!-- mb左側卡片 -->
+
+<!-- mb右側列表 -->
+
     </div>
   </div>
     </section>
@@ -220,11 +307,11 @@
 
   <!-- 初階路線推薦 -->
 <h1 class="text-center mt-10 mb-4 ">初階路線推薦</h1>
-  <div class="section4-bg">
+  <div class="section4-bg se-mb-tbody">
 <div class="container ">
 
     <div class="row g-4 justify-content-center mb-10 ">
-      <div class="col-md-6 ">
+      <div class="col-6 col-md-12 ">
         <div class="se-card shadow-sm  d-flex flex-row align-items-center ">
           <img src="/assets/images/search/sec1.jpg" class="img-fluid" alt="三小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="se-card-body">
@@ -232,14 +319,14 @@
             <p class="se-card-text text-muted">輕鬆半日健行</p>
            
           </div>
-          <div class="pe-5">
-    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm ">查看更多</a>
+          <div class="ps-10">
+    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm px-5 py-5 fw-bold">查看更多</a>
           </div>
           
         </div>
       </div>
     
-      <div class="col-md-6 ">
+      <div class="col-6 col-md-12">
         <div class="se-card shadow-sm  d-flex flex-row align-items-center">
           <img src="/assets/images/search/sec2.jpg" class="img-fluid" alt="五小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="se-card-body">
@@ -247,13 +334,13 @@
             <p class="se-card-text text-muted">沈浸山林半日旅程</p>
             
           </div>
-          <div class="pe-5">
-    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm ">查看更多</a>
+          <div class="ps-10">
+    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm px-5 py-5 fw-bold">查看更多</a>
           </div>
         </div>
       </div>
     
-      <div class="col-md-6 ">
+      <div class="col-6 col-md-12">
         <div class="se-card shadow-sm  d-flex flex-row align-items-center ">
           <img src="/assets/images/search/sec3.jpg" class="img-fluid img-container" alt="區域爬坡" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="se-card-body">
@@ -261,13 +348,13 @@
             <p class="se-card-text text-muted">探索山景獨特風貌</p>
             
           </div>
-          <div class="pe-5">
-    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm ">查看更多</a>
+          <div class="ps-10">
+    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm px-5 py-5 fw-bold">查看更多</a>
           </div>
         </div>
       </div>
     
-      <div class="col-md-6 ">
+      <div class="col-6 col-md-12">
         <div class="se-card shadow-sm  d-flex flex-row align-items-center">
           <img src="/assets/images/search/sec4.jpg" class="img-fluid " alt="百岳入門必訪" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="se-card-body">
@@ -275,14 +362,14 @@
             <p class="se-card-text text-muted">體驗百岳的魅力</p>
             
           </div>
-          <div class="pe-5">
-    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm px-5">查看更多</a>
+          <div class="ps-10">
+    <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm px-5 py-5 fw-bold">查看更多</a>
           </div>
         </div>
       </div>
       <!-- 查看更多 -->
-    <div class="text-center mt-5 mb-10">
-      <a href="#" class="se-btn se-btn-outline-success rounded-pill ">查看更多路線</a>
+    <div class="text-center mt-6 mb-10">
+      <a href="#" class="se-btn se-btn-outline-success rounded-pill px-10 py-5 fw-bold">查看更多路線</a>
     </div>
     </div>
 
@@ -290,6 +377,67 @@
 </div>
 
 
+<!-- 初階路線推薦-mb -->
+
+<div class="section4-bg se-pc-tbody">
+
+
+    <div class="row g-4 justify-content-center mb-5">
+
+      <!-- 卡片 -->
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+          <img src="/assets/images/search/sec1.jpg" class="img-fluid rounded" alt="三小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="flex-grow-1 px-1">
+            <h5 class="card-title mb-1">三小時內完成</h5>
+            <p class="card-text text-muted mb-0">輕鬆享受登山樂趣</p>
+          </div>
+          <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+          <img src="/assets/images/search/sec2.jpg" class="img-fluid rounded" alt="五小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="flex-grow-1 px-1">
+            <h5 class="card-title mb-1">五小時內完成</h5>
+            <p class="card-text text-muted mb-0">沈浸山林半日旅程</p>
+          </div>
+          <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+          <img src="/assets/images/search/sec3.jpg" class="img-fluid rounded" alt="區域精選" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="flex-grow-1 px-1 ">
+            <h5 class="card-title mb-1">區域精選</h5>
+            <p class="card-text text-muted mb-0">探索山景獨特風貌</p>
+          </div>
+          <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+          <img src="/assets/images/search/sec4.jpg" class="img-fluid rounded" alt="百岳入門必訪" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
+          <div class="flex-grow-1 px-1">
+            <h5 class="card-title mb-1">百岳入門必訪</h5>
+            <p class="card-text text-muted mb-0">體驗百岳的魅力</p>
+          </div>
+          <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
+        </div>
+      </div>    <!-- 查看更多 -->
+    <div class="text-center mt-4 ">
+      <a href="#" class="se-btn se-btn-outline-success rounded-pill fw-bold py-5 col-12">查看更多路線</a>
+    </div>
+
+    </div>
+
+
+
+
+</div>
 
 
   <%- include('./layout/footer'); -%>
