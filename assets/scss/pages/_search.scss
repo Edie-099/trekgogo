@@ -37,7 +37,6 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .se-card img {
@@ -83,54 +82,49 @@
   display: inline-block;
   padding: 6px 14px;
   margin-top: 8px;
-  border: 2px solid #325B53;
+  border: 2px solid #325b53;
   border-radius: 20px;
   text-decoration: none;
-  color: #325B53;
+  color: #325b53;
   font-size: 14px;
   transition: 0.2s;
-  background-color: #FFFFFF;
-
+  background-color: #ffffff;
 }
-
 
 .se-btn-brand {
   display: inline-block;
   padding: 6px 14px;
   margin-top: 8px;
-  border: 1px solid #325B53;
+  border: 1px solid #325b53;
   border-radius: 20px;
   text-decoration: none;
-  color: #325B53;
+  color: #325b53;
   font-size: 14px;
   transition: 0.2s;
-  background-color: #FFFFFF;
-
+  background-color: #ffffff;
 }
 
 .se-btn-green {
   display: inline-block;
   padding: 6px 14px;
   margin-top: 8px;
-  border: 1px solid #2d554a;
+  border: 1px solid #325b53;
   border-radius: 20px;
   text-decoration: none;
-  color: #2d554a;
+  color: #325b53;
   font-size: 14px;
   transition: 0.2s;
-  background-color: #325B53;
+  background-color: #325b53;
 }
 
-
 .se-btn-green:hover {
-  background: #2B897A;
+  background: #2b897a;
+  border: 1px solid #2b897a;
   color: #fff;
 }
 
-
-
 .se-btn:hover {
-  background: #2d554a;
+  background: #325b53;
   color: #fff;
 }
 
@@ -148,7 +142,6 @@ h2 {
   height: 200px;
 }
 
-
 .se-card-sec3 img {
   object-fit: cover;
   height: 555px;
@@ -163,8 +156,6 @@ h2 {
 .se-arrow-L {
   margin-left: -20px;
 }
-
-
 
 .se-h-100 {
   height: 100px;
@@ -206,22 +197,15 @@ h2 {
   }
 }
 
-
-
 /* 外層背景漸層 */
 .section1-bg {
-  background: linear-gradient(to bottom, #FFFFFF 0%, #DCE0E5 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #dce0e5 100%);
   padding: 120px 0;
-  
-
 }
 
-
 .section3-bg {
-  background: #ECF3ED;
+  background: #ecf3ed;
   padding: 120px 0;
-  
-
 }
 
 /* 地圖方塊 */
@@ -232,7 +216,7 @@ h2 {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
-  background: #A0D9F7; /* 避免圖片未載入時白底 */
+  background: #a0d9f7; /* 避免圖片未載入時白底 */
 }
 
 .map-wrapper img {
@@ -240,7 +224,6 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
-
 
 .section1-bg {
   background-color: var(#2d554a); /* 淺灰色背景 */
@@ -250,50 +233,41 @@ h2 {
   color: white;
 }
 
-
 .section2-bg {
-  background-image: url('/assets/images/search/Section2.png');
+  background-image: url("/assets/images/search/Section2.png");
   background-size: fill;
   background-repeat: no-repeat;
   background-position: bottom;
   padding: 60px 20px;
-
-
 }
 
-
-
 .section3-bg {
-  background-color: var(#ECF3ED); /* 淺灰色背景 */
-  background-image: url('/assets/images/search/img_route_m.png');
+  background-color: var(#ecf3ed); /* 淺灰色背景 */
+  background-image: url("/assets/images/search/img_route_m.png");
   background-size: fill;
   background-repeat: no-repeat;
   background-position: bottom;
   padding: 60px 20px;
   text-align: center;
-  color: #1B2028;
+  color: #1b2028;
 }
 
 .section4-bg {
-
-  background-image: url('/assets/images/search/Section4.png');
+  background-image: url("/assets/images/search/Section4.png");
   background-size: fill;
   background-repeat: no-repeat;
   background-position: bottom;
   padding: 10px 20px;
   text-align: center;
-
 }
-
-
 
 // 篩選卡片
 .se-filter-card {
-  background-color: #FFFFFF; // 淺藍
+  background-color: #ffffff; // 淺藍
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  color: #1B2028;
+  color: #1b2028;
 
   h5 {
     font-weight: 700;
@@ -309,10 +283,9 @@ h2 {
     font-size: 0.85rem;
     padding: 0.35rem 0.9rem;
 
-
     &.active {
-      background-color: #ECF3ED;
-      color: #325B53;
+      background-color: #ecf3ed;
+      color: #325b53;
     }
   }
 
@@ -320,14 +293,12 @@ h2 {
   .se-btn-outline-success {
     border-radius: 8px;
     font-weight: 600;
-
-
   }
 
   .se-btn-success {
     background-color: darken(#198754, 5%);
-    border-color: #325B53;
-    border: 2px solid #325B53;
+    border-color: #325b53;
+    border: 2px solid #325b53;
 
     &:hover {
       background-color: darken(#198754, 5%);
@@ -337,25 +308,20 @@ h2 {
   .se-btn-outline-success {
     &:hover {
       background-color: rgba(25, 135, 84, 0.1);
-      color: #325B53;
-          border: 1px solid #325B53;
-
+      color: #325b53;
+      border: 1px solid #325b53;
     }
   }
 }
 
-
 .se-scroll-cards {
-  overflow-x: auto;     /* 水平可滑 */
+  overflow-x: auto; /* 水平可滑 */
   -webkit-overflow-scrolling: touch; /* iOS 慣性滑動 */
   scrollbar-width: none; /* Firefox 隱藏捲軸 */
 }
 .se-scroll-cards::-webkit-scrollbar {
   display: none; /* Chrome/Safari 隱藏捲軸 */
 }
-
-
-
 
 .se-carousel-control-prev-icon,
 .se-carousel-control-next-icon {
@@ -394,7 +360,7 @@ h2 {
 }
 .se-carousel-control-prev-icon {
   left: 8px;
-  transform: translateY(-50%) translateX(-60%) scaleX(-1);
+  transform: translateY(-50%) scaleX(-1);
 }
 .se-carousel-control-next-icon {
   right: 8px;
@@ -411,7 +377,6 @@ h2 {
   }
 }
 
-
 /* 手機窄版：隱藏覆蓋箭頭、縮小左右留白 */
 @media (max-width: 991.98px) {
   .tools__carousel {
@@ -423,26 +388,21 @@ h2 {
   }
 }
 
-
 .se-hilight {
-  color: #B08E5F;
+  color: #b08e5f;
   font-weight: 700;
   font-size: 32px;
 }
 
-
 .se-hilight-sm {
-  color: #B08E5F;
+  color: #b08e5f;
   font-weight: 700;
   font-size: 20px;
 }
 
-
 .se-bg-secondary {
-  background-color: #BA6F49;
+  background-color: #ba6f49;
 }
-
-
 
 /* 手機窄版：隱藏切換MB版登山狀態 */
 @media (max-width: 991.98px) {
@@ -451,67 +411,106 @@ h2 {
   }
   .se-mb-tbody {
     display: none;
-  }     
+  }
 
-    .se-mb-tbody-title {
-      display: none;
-    }
-    .card-title{
-      font-size: 16px;
-      font-weight: 600;
-    }
-    .section4-bg {
+  .se-mb-tbody-title {
+    display: none;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-  background-image: url('/assets/images/search/Section4.png');
-  background-size: fill;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 0px 0px;
-  padding-bottom: 120px;
-  text-align: center;
+  .se-map-img {
+    content: url('/assets/images/search/map_cropped.png');
+    background-position: bottom;
+  }
 
-}
+  .section2-bg {
+    background-image: url("/assets/images/search/Section2.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0px 0px;
 
-    //     .se-btn-sm{
-    //   font-size: 12px;
-    //   padding: 1px 1px;
-    // }
+    text-align: center;
+  }
+
+
+  .section4-bg {
+    background-image: url("/assets/images/search/Section4.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0px 0px;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+
+  //     .se-btn-sm{
+  //   font-size: 12px;
+  //   padding: 1px 1px;
+  // }
+
+
   }
 
 
 @media (min-width: 991.98px) {
-      .se-pc-tbody {
-      display: none;
-    }
-
+  .se-pc-tbody {
+    display: none;
+  }
 }
-
 
 /* 手機窄版：隱藏切換MB版登山狀態 */
 @media (max-width: 375px) {
+  .section4-bg {
+    background-image: url("/assets/images/search/Section4-sm.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0px 0px;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+  .section2-bg {
+    background-image: url("/assets/images/search/Section2-sm.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0px 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
 
-    .section4-bg {
-
-  background-image: url('/assets/images/search/Section4-sm.png');
-  background-size: fill;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 0px 0px;
-  padding-bottom: 120px;
-  text-align: center;
+// .se-btn-green,
+// .se-btn {
+//     font-size: 12px;
+//     padding: 1px 1px;
+//   }
 
 }
-    .section2-bg {
 
-  background-image: url('/assets/images/search/Section2-sm.png');
-  background-size: fill;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 0px 0px;
-  padding-bottom: 120px;
-  text-align: center;
-
+@media (max-width: 382px) {
+    .mb-8 {
+    margin-bottom: 0px !important;      
+    }
 }
 
 
+.se-map-wrapper {
+  width: 100%;
+  max-width: 1296px;
+  aspect-ratio: 1296 / 669;  /* 自動維持比例 */
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: #A0D9F7;
 }
+
+
+.search-card {
+  position: absolute;
+  bottom: 0.75rem; // 等同於 Bootstrap 的 bottom-3
+}
+

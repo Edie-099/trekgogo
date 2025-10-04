@@ -25,7 +25,7 @@
 
       <!-- 版本三：3/9 -->
       <div class="col-4 col-md-4 col-lg-5">
-        <div class="se-filter-card position-absolute bottom-3 start-0 m-5 p-4 mt-10 ms-5 shadow-sm">
+        <div class="se-filter-card position-absolute search-card start-0 m-5 p-4 mt-10 ms-5 shadow-sm">
           <div class="d-flex justify-content-between align-items-center mb-4">
             <div class="h5 fw-bold">前期登山探索<i class="bi bi-chevron-down mx-2"></i></div><i class="bi bi-info-circle mb-4"></i>
 
@@ -82,8 +82,8 @@
       <!-- 版本三：9 -->
       <!-- 右側 col (地圖) -->
       <div class="col-12 col-md-8 col-lg-7 ">
-        <div class="map-container position-relative">
-          <img src="/assets/images/search/Map.png" class="img-fluid " alt="台灣地圖">
+        <div class="se-map-container position-relative ">
+          <img src="/assets/images/search/Map.png" class="img-fluid se-map-img" alt="台灣地圖">
         </div>
       </div>
 
@@ -92,7 +92,7 @@
 </section>
 
 
-
+<!-- pc熱門登山路線狀態 -->
 <section class="section2-bg">
     <div class="container">
         <div class="row">
@@ -113,19 +113,19 @@
 
           </div>                 <!-- pc右側列表 -->
       <div class="col-7 se-mb-tbody">
-        <div class="row pb-2 mb-3">
+        <div class="row pb-2 mb-3 ">
           <div class="col-4">名稱</div>
           <div class="col-4">地區</div>
-          <div class="col-4">登山路線狀態</div>
+          <div class="col-4 ">登山路線狀態</div>
         </div>
 
         <!-- 列表項目 -->
-        <div class="row align-items-center py-5 border-bottom">
+        <div class="row align-items-center py-5 border-bottom ">
           <div class="col-4 d-flex align-items-center gap-2">
             <span class="badge bg-secondary rounded-circle">2</span>
             <span class="fw-bold">紅淡山</span>
           </div>
-          <div class="col-4 text-muted small">基隆市仁愛區</div>
+          <div class="col-4 text-muted small ">基隆市仁愛區</div>
           <div class="col-4 "><p><span class="se-hilight-sm">145</span> 人成功登頂</p></div>
         </div>
 
@@ -156,11 +156,10 @@
         </div>
       </div>
 
-
-
-<section class="py-5 se-pc-tbody">
-  <div class="container2">
-  
+<!-- mb左側卡片 -->
+<!-- mb右側列表 -->
+<!-- mb熱門登山路線狀態 -->
+<section class=" se-pc-tbody">
 
     <!-- 主圖 -->
     <div class="mb-3">
@@ -171,13 +170,16 @@
     <div class="rounded">
       
       <!-- 1 -->
-      <div class="list-group-item d-flex align-items-center py-5 border-bottom">
-        <img src="/assets/images/search/Badges1.png" alt="no.1" style="width:28px; height:28px;" class="me-2">
-        <div class="flex-grow-1 ">
-          <h6 class="mb-0 fw-bold">中央尖山</h6>
-          <small class="text-muted">台中市和平區 / 花蓮縣秀林鄉</small>
+      <div class="list-group-item d-flex align-items-center py-5 border-bottom ">
+        <div class="d-flex align-items-start ">
+          <img src="/assets/images/search/Badges1.png" alt="no.1" style="width:28px; height:28px;" class="me-2">
+          <div class="text-start ">
+            <h6 class="mb-0 fw-bold">中央尖山</h6>
+            <small class="text-muted">台中市和平區 / 花蓮縣秀林鄉</small>
+          </div>
+
         </div>
-        <div class="text-end fw-bold">
+        <div class="text-end fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">177</span> 人成功登頂</p>
         </div>
       </div>
@@ -185,11 +187,11 @@
       <!-- 2 -->
       <div class="list-group-item d-flex align-items-center py-5 border-bottom">
         <img src="/assets/images/search/Badges2.png" alt="no.2" style="width:28px; height:28px;" class="me-2">
-        <div class="flex-grow-1 ">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">紅淡山</h6>
           <small class="text-muted">基隆市仁愛區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">145</span> 人成功登頂</p>
         </div>
       </div>
@@ -197,11 +199,11 @@
       <!-- 3 -->
       <div class="list-group-item d-flex align-items-center py-5 border-bottom">
         <img src="/assets/images/search/Badges3.png" alt="no.3" style="width:28px; height:28px;" class="me-2">
-        <div class="flex-grow-1">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">塔曼山步道</h6>
           <small class="text-muted">桃園市復興區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">118</span> 人成功登頂</p>
         </div>
       </div>
@@ -209,11 +211,11 @@
       <!-- 4 -->
       <div class="list-group-item d-flex align-items-center py-5 border-bottom">
 
-        <div class="flex-grow-1">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">能高越嶺道 - 西段</h6>
           <small class="text-muted">基隆市仁愛區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">96</span> 人成功登頂</p>
         </div>
       </div>
@@ -221,32 +223,31 @@
       <!-- 5 -->
       <div class="list-group-item d-flex align-items-center py-5 ">
       
-        <div class="flex-grow-1">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">雪山北峰</h6>
           <small class="text-muted">苗栗縣泰安鄉 / 臺中市和平區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">78</span> 人成功登頂</p>
         </div>
-      </div>
+      </div> <!-- 查看更多 -->
+    <div class="text-center mt-4 ">
+      <a href="#" class="se-btn se-btn-outline-success rounded-pill fw-bold py-5 col-12">查看更多路線</a>
     </div>
 
-    <!-- 查看更多 -->
-    <div class="text-center mt-4 col-mb-12">
-      <a href="#" class="se-btn se-btn-outline-success rounded-pill px-10 py-5 fw-bold">查看更多</a>
     </div>
-  </div>
+
+
+
 </section>
-
-<!-- mb左側卡片 -->
-
-<!-- mb右側列表 -->
-
     </div>
   </div>
     </section>
 
-    <div class="section3-bg">
+
+
+    <div class="section3-bg">            <!-- 左箭頭（可留/可刪） -->
+            
     <!-- 山屋與營地資訊 -->
       <div class="container py-5 ">
       
@@ -263,7 +264,10 @@
       
       <div class="se-card-sec3 text-white shadow-sm position-relative">            
         
-
+<button
+              class="prep-carousel-control-prev-icon "
+              aria-label="上一張"
+            ></button>
 
         <img src="/assets/images/search/Card1.png" class="se-card-img" alt="九九山莊">
               <div class="se-card-img-overlay d-flex flex-column justify-content-start p-0">
@@ -292,17 +296,20 @@
                   <h5 class="se-card-title me-9 mb-5">向陽山屋</h5>
                   <p class="h6"><i class="bi bi-geo-alt mx-1"></i>大霸尖山登山步道</p>
                 </div>
-              </div>
+              </div>            
+              
+              <button
+              class="prep-carousel-control-next-icon"
+              aria-label="下一張"
+            ></button>
       </div>
 </div>
 
-
+</div>
 </div>
 
-
-</div>
           </div>
-        </div>
+       
     </div>
 
   <!-- 初階路線推薦 -->
@@ -368,7 +375,7 @@
         </div>
       </div>
       <!-- 查看更多 -->
-    <div class="text-center mt-6 mb-10">
+    <div class="text-center mt-6">
       <a href="#" class="se-btn se-btn-outline-success rounded-pill px-10 py-5 fw-bold">查看更多路線</a>
     </div>
     </div>
@@ -386,51 +393,51 @@
 
       <!-- 卡片 -->
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/assets/images/search/sec1.jpg" class="img-fluid rounded" alt="三小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1">
-            <h5 class="card-title mb-1">三小時內完成</h5>
-            <p class="card-text text-muted mb-0">輕鬆享受登山樂趣</p>
+            <h5 class="se-card-title mb-1">三小時內完成</h5>
+            <p class="se-card-text text-muted mb-0">輕鬆享受登山樂趣</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
         </div>
       </div>
 
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/assets/images/search/sec2.jpg" class="img-fluid rounded" alt="五小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1">
-            <h5 class="card-title mb-1">五小時內完成</h5>
-            <p class="card-text text-muted mb-0">沈浸山林半日旅程</p>
+            <h5 class="se-card-title mb-1">五小時內完成</h5>
+            <p class="se-card-text text-muted mb-0">沈浸山林半日旅程</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
         </div>
       </div>
 
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/assets/images/search/sec3.jpg" class="img-fluid rounded" alt="區域精選" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1 ">
-            <h5 class="card-title mb-1">區域精選</h5>
-            <p class="card-text text-muted mb-0">探索山景獨特風貌</p>
+            <h5 class="se-card-title mb-1">區域精選</h5>
+            <p class="se-card-text text-muted mb-0">探索山景獨特風貌</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
         </div>
       </div>
 
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/assets/images/search/sec4.jpg" class="img-fluid rounded" alt="百岳入門必訪" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1">
-            <h5 class="card-title mb-1">百岳入門必訪</h5>
+            <h5 class="se-card-title mb-1">百岳入門必訪</h5>
             <p class="card-text text-muted mb-0">體驗百岳的魅力</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
-        </div>
-      </div>    <!-- 查看更多 -->
+        </div><!-- 查看更多 -->
     <div class="text-center mt-4 ">
       <a href="#" class="se-btn se-btn-outline-success rounded-pill fw-bold py-5 col-12">查看更多路線</a>
     </div>
+      </div>    
 
     </div>
 
