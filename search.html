@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../static/css/search.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script type="module" crossorigin src="/trekgogo/assets/all-Cz5knkW4.js"></script>
-  <script type="module" crossorigin src="/trekgogo/assets/main-CRaIC8lC.js"></script>
-  <link rel="stylesheet" crossorigin href="/trekgogo/assets/all-CkhPQz8Y.css">
+  <script type="module" crossorigin src="/trekgogo/assets/all-EV9OdK7I.js"></script>
+  <script type="module" crossorigin src="/trekgogo/assets/main-DNntlcmz.js"></script>
+  <link rel="stylesheet" crossorigin href="/trekgogo/assets/all-CtSv3OBj.css">
 </head>
 <body>
   <div class="container-xl">
@@ -304,7 +304,7 @@
 
       <!-- 版本三：3/9 -->
       <div class="col-4 col-md-4 col-lg-5">
-        <div class="se-filter-card position-absolute bottom-3 start-0 m-5 p-4 mt-10 ms-5 shadow-sm">
+        <div class="se-filter-card position-absolute search-card start-0 m-5 p-4 mt-10 ms-5 shadow-sm">
           <div class="d-flex justify-content-between align-items-center mb-4">
             <div class="h5 fw-bold">前期登山探索<i class="bi bi-chevron-down mx-2"></i></div><i class="bi bi-info-circle mb-4"></i>
 
@@ -361,8 +361,8 @@
       <!-- 版本三：9 -->
       <!-- 右側 col (地圖) -->
       <div class="col-12 col-md-8 col-lg-7 ">
-        <div class="map-container position-relative">
-          <img src="/trekgogo/assets/Map-B3-bPP7K.png" class="img-fluid " alt="台灣地圖">
+        <div class="se-map-container position-relative ">
+          <img src="/trekgogo/assets/Map-B3-bPP7K.png" class="img-fluid se-map-img" alt="台灣地圖">
         </div>
       </div>
 
@@ -371,7 +371,7 @@
 </section>
 
 
-
+<!-- pc熱門登山路線狀態 -->
 <section class="section2-bg">
     <div class="container">
         <div class="row">
@@ -392,19 +392,19 @@
 
           </div>                 <!-- pc右側列表 -->
       <div class="col-7 se-mb-tbody">
-        <div class="row pb-2 mb-3">
+        <div class="row pb-2 mb-3 ">
           <div class="col-4">名稱</div>
           <div class="col-4">地區</div>
-          <div class="col-4">登山路線狀態</div>
+          <div class="col-4 ">登山路線狀態</div>
         </div>
 
         <!-- 列表項目 -->
-        <div class="row align-items-center py-5 border-bottom">
+        <div class="row align-items-center py-5 border-bottom ">
           <div class="col-4 d-flex align-items-center gap-2">
             <span class="badge bg-secondary rounded-circle">2</span>
             <span class="fw-bold">紅淡山</span>
           </div>
-          <div class="col-4 text-muted small">基隆市仁愛區</div>
+          <div class="col-4 text-muted small ">基隆市仁愛區</div>
           <div class="col-4 "><p><span class="se-hilight-sm">145</span> 人成功登頂</p></div>
         </div>
 
@@ -435,11 +435,10 @@
         </div>
       </div>
 
-
-
-<section class="py-5 se-pc-tbody">
-  <div class="container2">
-  
+<!-- mb左側卡片 -->
+<!-- mb右側列表 -->
+<!-- mb熱門登山路線狀態 -->
+<section class=" se-pc-tbody">
 
     <!-- 主圖 -->
     <div class="mb-3">
@@ -450,13 +449,16 @@
     <div class="rounded">
       
       <!-- 1 -->
-      <div class="list-group-item d-flex align-items-center py-5 border-bottom">
-        <img src="data:image/png;base64,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" alt="no.1" style="width:28px; height:28px;" class="me-2">
-        <div class="flex-grow-1 ">
-          <h6 class="mb-0 fw-bold">中央尖山</h6>
-          <small class="text-muted">台中市和平區 / 花蓮縣秀林鄉</small>
+      <div class="list-group-item d-flex align-items-center py-5 border-bottom ">
+        <div class="d-flex align-items-start ">
+          <img src="data:image/png;base64,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" alt="no.1" style="width:28px; height:28px;" class="me-2">
+          <div class="text-start ">
+            <h6 class="mb-0 fw-bold">中央尖山</h6>
+            <small class="text-muted">台中市和平區 / 花蓮縣秀林鄉</small>
+          </div>
+
         </div>
-        <div class="text-end fw-bold">
+        <div class="text-end fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">177</span> 人成功登頂</p>
         </div>
       </div>
@@ -464,11 +466,11 @@
       <!-- 2 -->
       <div class="list-group-item d-flex align-items-center py-5 border-bottom">
         <img src="data:image/png;base64,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" alt="no.2" style="width:28px; height:28px;" class="me-2">
-        <div class="flex-grow-1 ">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">紅淡山</h6>
           <small class="text-muted">基隆市仁愛區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">145</span> 人成功登頂</p>
         </div>
       </div>
@@ -476,11 +478,11 @@
       <!-- 3 -->
       <div class="list-group-item d-flex align-items-center py-5 border-bottom">
         <img src="data:image/png;base64,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" alt="no.3" style="width:28px; height:28px;" class="me-2">
-        <div class="flex-grow-1">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">塔曼山步道</h6>
           <small class="text-muted">桃園市復興區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">118</span> 人成功登頂</p>
         </div>
       </div>
@@ -488,11 +490,11 @@
       <!-- 4 -->
       <div class="list-group-item d-flex align-items-center py-5 border-bottom">
 
-        <div class="flex-grow-1">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">能高越嶺道 - 西段</h6>
           <small class="text-muted">基隆市仁愛區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">96</span> 人成功登頂</p>
         </div>
       </div>
@@ -500,32 +502,31 @@
       <!-- 5 -->
       <div class="list-group-item d-flex align-items-center py-5 ">
       
-        <div class="flex-grow-1">
+        <div class="text-start">
           <h6 class="mb-0 fw-bold">雪山北峰</h6>
           <small class="text-muted">苗栗縣泰安鄉 / 臺中市和平區</small>
         </div>
-        <div class="text-end text-success fw-bold">
+        <div class="text-end text-success fw-bold ms-auto">
           <p class="small text-muted"><span class="se-hilight-sm">78</span> 人成功登頂</p>
         </div>
-      </div>
+      </div> <!-- 查看更多 -->
+    <div class="text-center mt-4 ">
+      <a href="#" class="se-btn se-btn-outline-success rounded-pill fw-bold py-5 col-12">查看更多路線</a>
     </div>
 
-    <!-- 查看更多 -->
-    <div class="text-center mt-4 col-mb-12">
-      <a href="#" class="se-btn se-btn-outline-success rounded-pill px-10 py-5 fw-bold">查看更多</a>
     </div>
-  </div>
+
+
+
 </section>
-
-<!-- mb左側卡片 -->
-
-<!-- mb右側列表 -->
-
     </div>
   </div>
     </section>
 
-    <div class="section3-bg">
+
+
+    <div class="section3-bg">            <!-- 左箭頭（可留/可刪） -->
+            
     <!-- 山屋與營地資訊 -->
       <div class="container py-5 ">
       
@@ -542,7 +543,10 @@
       
       <div class="se-card-sec3 text-white shadow-sm position-relative">            
         
-
+<button
+              class="prep-carousel-control-prev-icon "
+              aria-label="上一張"
+            ></button>
 
         <img src="/trekgogo/assets/Card1-G0hD1VfT.png" class="se-card-img" alt="九九山莊">
               <div class="se-card-img-overlay d-flex flex-column justify-content-start p-0">
@@ -571,17 +575,20 @@
                   <h5 class="se-card-title me-9 mb-5">向陽山屋</h5>
                   <p class="h6"><i class="bi bi-geo-alt mx-1"></i>大霸尖山登山步道</p>
                 </div>
-              </div>
+              </div>            
+              
+              <button
+              class="prep-carousel-control-next-icon"
+              aria-label="下一張"
+            ></button>
       </div>
 </div>
 
-
+</div>
 </div>
 
-
-</div>
           </div>
-        </div>
+       
     </div>
 
   <!-- 初階路線推薦 -->
@@ -647,7 +654,7 @@
         </div>
       </div>
       <!-- 查看更多 -->
-    <div class="text-center mt-6 mb-10">
+    <div class="text-center mt-6">
       <a href="#" class="se-btn se-btn-outline-success rounded-pill px-10 py-5 fw-bold">查看更多路線</a>
     </div>
     </div>
@@ -665,51 +672,51 @@
 
       <!-- 卡片 -->
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/trekgogo/assets/sec1-DEfgifH2.jpg" class="img-fluid rounded" alt="三小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1">
-            <h5 class="card-title mb-1">三小時內完成</h5>
-            <p class="card-text text-muted mb-0">輕鬆享受登山樂趣</p>
+            <h5 class="se-card-title mb-1">三小時內完成</h5>
+            <p class="se-card-text text-muted mb-0">輕鬆享受登山樂趣</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
         </div>
       </div>
 
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/trekgogo/assets/sec2-o8MIKIZm.jpg" class="img-fluid rounded" alt="五小時內完成" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1">
-            <h5 class="card-title mb-1">五小時內完成</h5>
-            <p class="card-text text-muted mb-0">沈浸山林半日旅程</p>
+            <h5 class="se-card-title mb-1">五小時內完成</h5>
+            <p class="se-card-text text-muted mb-0">沈浸山林半日旅程</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
         </div>
       </div>
 
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/trekgogo/assets/sec3-Cpvzfa7M.jpg" class="img-fluid rounded" alt="區域精選" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1 ">
-            <h5 class="card-title mb-1">區域精選</h5>
-            <p class="card-text text-muted mb-0">探索山景獨特風貌</p>
+            <h5 class="se-card-title mb-1">區域精選</h5>
+            <p class="se-card-text text-muted mb-0">探索山景獨特風貌</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
         </div>
       </div>
 
       <div class="col-12 col-md-6">
-        <div class="card shadow-sm d-flex flex-row align-items-center p-3">
+        <div class="se-card shadow-sm d-flex flex-row align-items-center p-3">
           <img src="/trekgogo/assets/sec4-iFZzpXkd.jpg" class="img-fluid rounded" alt="百岳入門必訪" style="width:40%; height: 40%; aspect-ratio: 4/3; object-fit:cover;">
           <div class="flex-grow-1 px-1">
-            <h5 class="card-title mb-1">百岳入門必訪</h5>
+            <h5 class="se-card-title mb-1">百岳入門必訪</h5>
             <p class="card-text text-muted mb-0">體驗百岳的魅力</p>
           </div>
           <a href="#" class="se-btn se-btn-outline-success rounded-pill se-btn-sm fw-bold">查看更多</a>
-        </div>
-      </div>    <!-- 查看更多 -->
+        </div><!-- 查看更多 -->
     <div class="text-center mt-4 ">
       <a href="#" class="se-btn se-btn-outline-success rounded-pill fw-bold py-5 col-12">查看更多路線</a>
     </div>
+      </div>    
 
     </div>
 
